@@ -5,30 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-color-primary text-color-white tracking-wider">
     <header>
-        <nav class="container flex">
-            <div>
+        <nav class="container flex justify-between items-center">
+            <div class="w-20 py-5 text-text-color-secondary font-bold text-3xl">
                 <a href="#home">
-                    <span> Ho </span> Lab.
+                    <span class="text-color-white"> Ho</span>Lab.
                 </a>
             </div>
             <div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#feature">Feature</a></li>
-                    <li><a href="#home">Testing</a></li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#home">Home</a></li>
+                <ul class=" hidden lg:flex items-center space-x-6">
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#feature" class="hover:text-text-color-secondary ease-in duration-200">Feature</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Testing</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
                     
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><button class="bg-text-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200"> free trial</button> </li>
+                </ul>
+            </div>
+
+
+            <!-- mobile-screen -->
+
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class=" hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+                <ul class=" h-full grid place-items-center py-20">
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#feature" class="hover:text-text-color-secondary ease-in duration-200">Feature</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Testing</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
+            
+                    <li><button
+                            class="bg-text-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
+                            free trial</button> </li>
                 </ul>
             </div>
         </nav>
     </header>
+
+    <main>
+        <section id="home">
+            <div class="container py-20">
+                <div class="flex flex-col items-center z-20 md:flex-row">
+                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                        <h1 class="text-3xl md:text-4xl font-bold leading-snug">Holab holab</h1>
+                        <p> Holab Holab</p>
+                        <button class="bg-text-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">Apply to our lab
+                        </button>
+                    </div>
+
+                    <div>
+                        <img src="./img/hero4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Mobile menu
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hlink = document.querySelector('#hlink');
+        const faSolid = document.querySelector(".fa-solid");
+
+        hamburger.addEventListener("click",() =>{
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+
+        hlink.forEach(link => {
+            link.addEventListener('click', () =>{
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark');
+
+            })
+
+        })
+    </script>
+
+
 </body>
 
 </html>
