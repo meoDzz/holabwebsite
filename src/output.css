@@ -606,16 +606,20 @@ video {
   inset: 0px;
 }
 
-.-left-5 {
-  left: -1.25rem;
-}
-
 .right-0 {
   right: 0px;
 }
 
-.top-0 {
-  top: 0px;
+.right-2\/3 {
+  right: 66.666667%;
+}
+
+.top-60 {
+  top: 15rem;
+}
+
+.top-96 {
+  top: 24rem;
 }
 
 .-z-10 {
@@ -857,6 +861,10 @@ video {
   /* Set the maximum width of the website */
 }
 
+.circle{
+  width: 40rem;
+}
+
 .btn {
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
@@ -880,6 +888,7 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
+  text-transform: uppercase;
   line-height: 1.375;
 }
 
@@ -918,6 +927,32 @@ video {
 .fixed-size-image{
   width: 300px;
   height: 200px;
+}
+
+.langs{
+  background: red;
+  text-align: right;
+  /* margin: 10px 20px; */
+  padding: 12px 24px;
+}
+
+.langs a{
+  color: white;
+  /* Changes the link color to white */
+  text-decoration: none;
+  /* Removes the underline */
+  font-weight: bold;
+  /* Makes the link text bold */
+  /* background-color: aqua; */
+  font-weight: 600;
+}
+
+.langs a:hover{
+  background: green;
+}
+
+.langs a.active{
+  background: rgb(56, 56, 39);
 }
 
 .hover\:text-text-color-secondary:hover {
@@ -964,3 +999,4 @@ video {
     gap: 2rem;
   }
 }
+

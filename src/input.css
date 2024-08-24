@@ -8,13 +8,15 @@
     /* Set the maximum width of the website */
    
 }
-
+.circle{
+    width: 40rem;
+}
 .btn {
     @apply bg-text-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200;
 }
 
 .title {
-    @apply text-3xl md:text-4xl font-bold leading-snug mb-10;
+    @apply text-3xl md:text-4xl font-bold leading-snug mb-10 uppercase;
 }
 
 .responsive-image{
@@ -47,3 +49,31 @@
     width: 300px;
     height: 200px;
 }
+
+
+.langs{
+    background: red;
+    text-align: right;
+    /* margin: 10px 20px; */
+    padding: 12px 24px;
+}
+
+.langs a{
+    color: white;
+    /* Changes the link color to white */
+    text-decoration: none;
+    /* Removes the underline */
+    font-weight: bold;
+    /* Makes the link text bold */
+    /* background-color: aqua; */
+    font-weight: 600;
+}
+
+.langs a:hover{
+    background: green;
+}
+
+.langs a.active{
+    background: rgb(56, 56, 39);
+}
+
