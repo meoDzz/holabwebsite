@@ -12,22 +12,22 @@
 
 <body class="bg-color-primary text-color-white tracking-wider">
     <header>
-        <nav class="container flex justify-between items-center">
+        <nav class="container bg-color-primary flex justify-between items-center">
             <div class="w-20 py-5 text-text-color-secondary font-bold text-3xl">
                 <a href="#home">
-                    <span class="text-color-white"> Ho</span>Lab.
+                    <span class="text-color-white"> Soft Haptics</span>Lab.
                 </a>
             </div>
             <div>
                 <ul class=" hidden lg:flex items-center space-x-6">
-                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
-                    <li><a href="#feature" class="hover:text-text-color-secondary ease-in duration-200">Feature</a></li>
-                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Testing</a></li>
-                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
-                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
-                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200 capitalize">Home</a></li>
+                    <li><a href="#feature" class="hover:text-text-color-secondary ease-in duration-200 capitalize">Research</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200 capitalize">Members</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200 capitalize">Publications</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200 capitalize">Access</a></li>
+                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200 capitalize">Home</a></li>
                     
-                    <li><button class="bg-text-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200"> free trial</button> </li>
+                    <li><button class="bg-text-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200"> Apply to our lab</button> </li>
                 </ul>
             </div>
 
@@ -39,15 +39,15 @@
             </div>
             <div id="menu" class=" hidden bg-color-primary-dark h-[100vh] absolute inset-0">
                 <ul class=" h-full grid place-items-center py-20">
-                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
-                    <li><a href="#feature" class="hover:text-text-color-secondary ease-in duration-200">Feature</a></li>
-                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Testing</a></li>
-                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
-                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
-                    <li><a href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hlink" href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hlink" href="#feature" class="hover:text-text-color-secondary ease-in duration-200">Feature</a></li>
+                    <li><a id="hlink" href="#home" class="hover:text-text-color-secondary ease-in duration-200">Testing</a></li>
+                    <li><a id="hlink" href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hlink" href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hlink" href="#home" class="hover:text-text-color-secondary ease-in duration-200">Home</a></li>
             
                     <li><button class="btn">
-                            free trial</button> </li>
+                            Apply to our lab</button> </li>
                 </ul>
             </div>
         </nav>
@@ -56,28 +56,52 @@
     <main>
         <section id="home" class="relative">
             <div class="w-80 h-80 bg-color-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-            <div class="w-80 h-80 bg-color-white absolute top-0 bottom-100 right-0 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-
-            <div class="container py-20">
-                <div class="flex flex-col items-center z-20 md:flex-row">
-                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
-                        <h1 class="title">Holab holab</h1>
-                        <p class="leading-relaxed mb-10"> Holab Holab Holab Holab Holab HolabHolab HolabHolab HolabHolab HolabHolab HolabHolab Holab</p>
-                        <button class="btn">
-                            free trial</button>
-                    </div>
-
-                    <div>
-                        <img src="../img/ThayVan.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+            <div class="w-80 h-80 bg-color-white absolute top-0 bottom-100 -z-10 right-0 blur-2xl opacity-30 overflow-hidden rounded-full"></div>    
         </section>
 
+        <div class="container py-20 -z-30">
+            <div class="flex flex-col items-center md:flex-row">
+                <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                    <h1 class="title">ABOUT US </h1>
+                    <p class="leading-relaxed mb-10 text-justify"> Our Laboratory aims to answer emerging needs of the society by proposals of novel robotic systems, ranging from
+                    fabrication of sensors, actuators, and intelligence. We particulaly focus on dynamic investigation of nature phenomena
+                    to find out the underlying, dominating mechanisms that could then give hints to fabrication of novel structures. Ideas
+                    are shaped under the light of novel technologies with integration of scientific methods, then integrated in robotic
+                    systems with specific applications. Results obtained in this process could be inversely utilized to understand the
+                    natures.</p>
+                    <button class="btn"> Apply to our lab</button>
+                </div>
+        
+                <div>
+                    <img src="../img/lab2023.jpeg" alt="HolabImage" class="image-viewWidth">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container py-20 -z-30">
+            <div class="flex flex-col items-center md:flex-row">
+                <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                    <h1 class="title">MESSAGE TO POTENTIAL STUDENTS </h1>
+                    <p class="leading-relaxed mb-10 text-justify"> Robotics is multi-disciplanary research. Our lab welcomes students from diverse backgrounds, such as material science,
+                    mechanical engineering, sensor fabrication, control engineering, and information science. Skills can be achieved during
+                    the study, thus, the following minds are encouraged in our Lab: creation, communication, and commitment. Feel free to
+                    contact staffs in Lab for further information.</p>
+                    <button class="btn"> Apply to our lab</button>
+                </div>
+            </div>
+        </div>
         <section id="features" class="bg-color-primary-light">
             <div class="container py-20">
-                <div>
-                    <h4> Our research</h4>
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-text-color-secondary mb-4"> Our research</h4>
+                    <h1 class="title"> Easy to make paper</h1>
+                </div>
+                <div class="grid grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4">
+                    <!-- card no 1 -->
+                    <div class="border-2 border-solid border-color-gray">Card 1</div>
+                    <div class="border-2 border-solid border-color-gray">Card 2</div>
+                    <div class="border-2 border-solid border-color-gray">Card 3</div>
                 </div>
             </div>
         </section>
