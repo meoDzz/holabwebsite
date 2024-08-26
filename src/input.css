@@ -2,68 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .container {
-    max-width: 2000px;
-    /* Set the maximum width of the website */
-   
+  max-width: 2000px;
+  /* Set the maximum width of the website */
 }
-.circle{
-    width: 40rem;
+.circle {
+  width: 40rem;
 }
 .btn {
-    @apply bg-text-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200;
+  @apply bg-text-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200;
 }
 
 .title {
-    @apply text-3xl md:text-4xl font-bold leading-snug mb-10 uppercase;
+  @apply text-3xl md:text-4xl font-bold leading-snug mb-10 uppercase;
 }
 
-.responsive-image{
-    width: 100%;
+.responsive-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.image-viewWidth {
+  width: 40vw;
+  height: auto;
+}
+
+@media (max-width: 2000px) {
+  .image-viewWidth {
+    width: 400px;
     height: auto;
-    max-width: 100%;
+  }
 }
 
-.image-viewWidth{
-    width: 40vw;
+@media (max-width: 1000px) {
+  .image-viewWidth {
+    width: 100px;
     height: auto;
+  }
 }
 
-
-@media(max-width: 2000px) {
-    .image-viewWidth {
-        width: 400px;
-        height: auto;
-    }
+.fixed-size-image {
+  width: 300px;
+  height: 200px;
 }
 
-@media(max-width: 1000px) {
-    .image-viewWidth {
-        width: 100px;
-        height: auto;
-    }
+.languageSection {
+  padding: 10px 10px;
+  text-transform: uppercase;
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-end; /* Aligns the content to the right */
+  text-align: center; /* Centers the text inside each element */
+  max-width: 150px; /* Optional: Sets a max width for the section */
+  margin-left: auto; /* Pushes the content to the right side */
 }
 
-.fixed-size-image{
-    width: 300px;
-    height: 200px;
+.languageSection a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 10px;
+  flex: 1;
 }
 
-
-.languageSection{
-    background-color: #000;
-    padding: 10px 10px;
-    text-transform: uppercase;
-}
-
-.languageSection a{
-    color: #5c1d1d;
-    font-size: 15px;
-    font-weight: 700;
-    padding: 15px 10px;
-}
-
-.languageSection .active{
-    background-color: rgb(72, 255, 0);
+.languageSection .active {
+  background-color: rgb(0, 150, 255);
+  border-radius: 5px;
 }

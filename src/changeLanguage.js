@@ -43,14 +43,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // Data object containing different translations for each section
     const data = {
         "english": [
-            { "title": "English Title 1", "description": "This is the first English description." },
+            { "title": "English Ti111tle 1", "description": "This is the kkkkkkkkk English description." },
             { "title": "English Title 2", "description": "This is tcription." },
-            { "title": "English Title 3", "description": "This is the third English desn." }
+            { "title": "English T4444111itle 3", "description": "This is the third English desn." }
         ],
         "japanese": [
             { "title": "日本語トル1", "description": "これは最初です。" },
-            { "title": "日本語のタイトル2", "description": "この日本語の説明です。" },
-            { "title": "日本語のル3", "description": "これは3番目の日本語の説明です。" }
+            { "title": "日本語のaaaa444タイトル2", "description": "この日本語の説明です。" },
+            { "title": "日本語のル3", "description": "これは3番目のadsadsdasd日本語の説明です。" }
         ]
     };
 
@@ -75,4 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
 
