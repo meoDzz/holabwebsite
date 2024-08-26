@@ -1,0 +1,12 @@
+{
+    "english": [
+        { "title": "English Title 1", "description": "This is the first English description." },
+        { "title": "English Title 2", "description": "This is the second English description." },
+        { "title": "English Title 3", "description": "This is the third English description." }
+    ],
+    "japanese": [
+        { "title": "日本語のタイトル1", "description": "説明です。" },
+        { "title": "日本語のタイトル2", "description": "これです。" },
+        { "title": "日本イト3", "description": "これです。" }
+    ]
+}
