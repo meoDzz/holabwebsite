@@ -662,6 +662,10 @@ video {
   display: grid;
 }
 
+.contents {
+  display: contents;
+}
+
 .hidden {
   display: none;
 }
@@ -929,30 +933,21 @@ video {
   height: 200px;
 }
 
-.langs{
-  background: red;
-  text-align: right;
-  /* margin: 10px 20px; */
-  padding: 12px 24px;
+.languageSection{
+  background-color: #000;
+  padding: 10px 10px;
+  text-transform: uppercase;
 }
 
-.langs a{
-  color: white;
-  /* Changes the link color to white */
-  text-decoration: none;
-  /* Removes the underline */
-  font-weight: bold;
-  /* Makes the link text bold */
-  /* background-color: aqua; */
-  font-weight: 600;
+.languageSection a{
+  color: #5c1d1d;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 15px 10px;
 }
 
-.langs a:hover{
-  background: green;
-}
-
-.langs a.active{
-  background: rgb(56, 56, 39);
+.languageSection .active{
+  background-color: rgb(72, 255, 0);
 }
 
 .hover\:text-text-color-secondary:hover {
@@ -999,4 +994,3 @@ video {
     gap: 2rem;
   }
 }
-

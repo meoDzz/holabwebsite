@@ -11,8 +11,15 @@
 </head>
 
 <body class="bg-color-primary text-color-white tracking-wider">
+
+    
+
+
+    
     <header>
         <nav class="container bg-color-primary flex justify-between items-center">
+
+
             <div class="w-20 py-5 text-text-color-secondary font-bold text-3xl">
                 <a href="#home">
                     <span class="text-color-white"> Soft Haptics</span>Lab.
@@ -55,10 +62,20 @@
 
     <main>
 
-        <div class="langs container py-20 -z-30">
-            <a href="#" Language="English" class="active"> ENG</a>
-            <a href="#" Language="Japanese">JP</a>
+
+
+        <div class="container">
+            <div class="languageSection">
+                <a href="#" language='english'> ENG</a>
+                <a href="#" language='japanese'  class="active"> JP</a>
+            </div>
+            <div class="content">
+                <h1 class="title"> Test</h1>
+                <p class="description"> Test</p>
+            </div>
+
         </div>
+
         <section id="home" class="relative">
             <div class="w-80 h-80 bg-color-white absolute top-96 bottom-100 -z-10 right-0 blur-2xl opacity-30 overflow-hidden rounded-full"></div>    
             <div
@@ -66,8 +83,17 @@
             </div>
         </section>
 
+        <div class="content">
+            <h1 class="title"> Test</h1>
+            <p class="description"> Test</p>
+        </div>
+        <div class="content">
+            <h1 class="title"> Test</h1>
+            <p class="description"> Test</p>
+        </div>
+
         <div class="container py-20 -z-30">
-            <div class="flex flex-col items-center md:flex-row">
+            <div class="flex flex-col items-center md:flex-row ">
                 <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
                     <h1 class="title">ABOUT US </h1>
                     <p class="leading-relaxed mb-10 text-justify"> Our Laboratory aims to answer emerging needs of the society by proposals of novel robotic systems, ranging from
@@ -158,7 +184,7 @@
 
         })
     </script>
-
+    <script src = "changeLanguage.js"></script>
 
 </body>
 
