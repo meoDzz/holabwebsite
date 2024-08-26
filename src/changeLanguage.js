@@ -1,52 +1,7 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     const langSec = document.querySelector('.languageSection');
-//     const buttons = document.querySelectorAll('.languageSection a');
-
-//     // Data object containing different translations for each section
-//     const data = {
-//         "english": [
-//             { "title": "English Title 1", "description": "This is the first English description." },
-//             { "title": "English Title 2", "description": "This is tcription." },
-//             { "title": "English Title 3", "description": "This is the third English desn." },
-//             { "title": "English Title 4asdasd", "description": "This asdasdesn." },
-//             { "title1": "English Title 6666", "description": "This asdasdesn." }
-//         ],
-//         "japanese": [
-//             { "title": "日本語トル1", "description": "これは最初です。" },
-//             { "title": "日本語のタイトル2", "description": "この日本語の説明です。" },
-//             { "title": "日本語のル3", "description": "これは3番目の日本語の説明です。" },
-//             { "title": "日本語のル3 Title 4asdasd", "description": "This a日本語のル3sdasdesn." },
-//             { "title1": "日本語のル3 Title 6666", "description": "This asdasd日本語のル3esn." }
-//         ]
-//     };
-
-//     // Add click event listener to each button
-//     buttons.forEach(button => {
-//         button.addEventListener('click', (event) => {
-//             event.preventDefault();  // Prevent default anchor behavior
-//             langSec.querySelector('.active').classList.remove('active');
-//             button.classList.add('active');
-
-//             // Get the selected language
-//             const attr = button.getAttribute('language');
-
-//             // Update each content section based on the selected language
-//             const contents = document.querySelectorAll('.content');
-//             contents.forEach((content, index) => {
-//                 const title = content.querySelector('.title');
-//                 const description = content.querySelector('.description');
-//                 title.textContent = data[attr][index].title;
-//                 description.textContent = data[attr][index].description;
-//             });
-//         });
-//     });
-// });
 
 document.addEventListener('DOMContentLoaded', function () {
     const langSec = document.querySelector('.languageSection');
     const buttons = document.querySelectorAll('.languageSection a');
-
-    // Data object containing different translations for each section
     const data = {
         "english": {
             "title-header": "English Title 1",
@@ -73,8 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
             "description-txt": "これは5番目の日本語の説明です。"
         }
     };
-
-    // Add click event listener to each button
     buttons.forEach(button => {
         button.addEventListener('click', (event) => {
             event.preventDefault();  // Prevent default anchor behavior

@@ -865,7 +865,7 @@ video {
   /* Set the maximum width of the website */
 }
 
-.circle{
+.circle {
   width: 40rem;
 }
 
@@ -903,51 +903,62 @@ video {
   }
 }
 
-.responsive-image{
+.responsive-image {
   width: 100%;
   height: auto;
   max-width: 100%;
 }
 
-.image-viewWidth{
+.image-viewWidth {
   width: 40vw;
   height: auto;
 }
 
-@media(max-width: 2000px) {
+@media (max-width: 2000px) {
   .image-viewWidth {
     width: 400px;
     height: auto;
   }
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .image-viewWidth {
     width: 100px;
     height: auto;
   }
 }
 
-.fixed-size-image{
+.fixed-size-image {
   width: 300px;
   height: 200px;
 }
 
-.languageSection{
-  background-color: #000;
+.languageSection {
   padding: 10px 10px;
   text-transform: uppercase;
+  display: flex;
+  /* Use flexbox for layout */
+  justify-content: flex-end;
+  /* Aligns the content to the right */
+  text-align: center;
+  /* Centers the text inside each element */
+  max-width: 150px;
+  /* Optional: Sets a max width for the section */
+  margin-left: auto;
+  /* Pushes the content to the right side */
 }
 
-.languageSection a{
-  color: #5c1d1d;
+.languageSection a {
+  color: #fff;
   font-size: 15px;
   font-weight: 700;
   padding: 15px 10px;
+  flex: 1;
 }
 
-.languageSection .active{
-  background-color: rgb(72, 255, 0);
+.languageSection .active {
+  background-color: rgb(0, 150, 255);
+  border-radius: 5px;
 }
 
 .hover\:text-text-color-secondary:hover {
