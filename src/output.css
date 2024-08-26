@@ -562,6 +562,12 @@ video {
   padding-left: 20px;
 }
 
+@media (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -840,10 +846,41 @@ video {
   }
 }
 
+.description {
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  line-height: 1.375;
+}
+
+@media (min-width: 640px) {
+  .description {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .description {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .description {
+    font-size: 20px;
+  }
+}
+
 .responsive-image {
   width: 100%;
   height: auto;
   max-width: 100%;
+  max-height: 30hw;
 }
 
 .image-viewWidth {
@@ -860,7 +897,7 @@ video {
 
 @media (max-width: 1000px) {
   .image-viewWidth {
-    width: 100px;
+    width: 400px;
     height: auto;
   }
 }

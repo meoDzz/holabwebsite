@@ -17,10 +17,15 @@
   @apply text-3xl md:text-4xl font-bold leading-snug mb-10 uppercase;
 }
 
+.description{
+  @apply  xl:text-[20px] lg:text-[17px] sm:text-[10px]  md:text-[15px]  font-medium leading-snug mb-10 ;
+}
+
 .responsive-image {
   width: 100%;
   height: auto;
   max-width: 100%;
+  max-height: 30hw;
 }
 
 .image-viewWidth {
@@ -37,7 +42,7 @@
 
 @media (max-width: 1000px) {
   .image-viewWidth {
-    width: 100px;
+    width: 400px;
     height: auto;
   }
 }

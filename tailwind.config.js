@@ -12,8 +12,13 @@ module.exports = {
         "color-gray": "#333",
         "color-white": "#000",
         "color-blob": "#A427DF",
-      }
+      },
+      screens: {
+        'xs': '320px',  // Custom screen size, you can adjust the pixel value
+        'xmd': '768px',
+      },
     },
+    
     container:{
       center: true,
       padding: {
