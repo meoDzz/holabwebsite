@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/lab2023.jpeg">
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -72,6 +73,7 @@
     </header>
 
     <main>
+        
 
         <div class="container">
             <div class="languageSection">
@@ -81,7 +83,6 @@
         </div>
 
         <div class="container py-20 -z-30 ">
-            
             <div class="flex flex-col items-center md:flex-row ">
                 <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
                     <h1 class="title title-aboutus ">ABOUT US </h1>
@@ -102,21 +103,23 @@
         </div>
 
 
-        <div class="container py-20 -z-30">
+        <div class="container py-20 -z-60">
             <h1 class="title">Lab director</h1>
             <div class="flex flex-col items-center md:flex-row">   
-                <div class="flex justify-center w-full md:w-1/2">
-                    <img src="../img/ThayVan.jpg" alt="HolabImage" class="image-viewWidth rounded-full scale-50">
+                <div class="flex justify-center w-full md:w-1/2 -z-30">
+                    <img src="../img/ThayVan.jpg" alt="HolabImage" class="image-viewWidth rounded-full scale-75">
                 </div>
 
-                <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
-                    <p class="description description-messagepotential leading-relaxed mb-10 text-justify"> Robotics is multi-disciplanary research. Our lab
-                        welcomes students from diverse backgrounds, such as material science,
-                        mechanical engineering, sensor fabrication, control engineering, and information science. Skills can be achieved during
-                        the study, thus, the following minds are encouraged in our Lab: creation, communication, and
-                        commitment. Feel free to
-                        contact staffs in Lab for further information.</p>
-                    <p>Associate Professor HO, Van Anh</p>
+                <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10 -z-30">
+                    <p class="description description-messagepotential leading-relaxed mb-10 text-justify quote font-serif"> 
+                        Robotics is multi-disciplanary research. Our lab welcomes students from diverse backgrounds, such as material science,
+                        mechanical engineering, sensor fabrication, control engineering, and information science. Skills can be achieved during the study, thus, the following minds are encouraged in our Lab: creation, communication, and
+                        commitment. Feel free to contact staffs in Lab for further information.</p>
+                    <div class="flex flex-col text-right pr-96 -translate-x-36">
+                        <p class=" text-[30px] font-bold text-blue-700">Associate Professor HO, Van Anh </p>
+                        <p class=" text-[20px] text-blue-700">JST Presto Researcher, IEEE Senior Member</p>
+                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -143,21 +146,32 @@
             </div>
         </div>
 
-        <section id="features" class="bg-color-primary-light">
+        <!-- <section id="features" class="bg-color-primary-light">
             <div class="container py-20">
                 <div class="text-center m-auto mb-20 md:w-1/2">
                     <h4 class="font-bold text-text-color-secondary mb-4"> Our research</h4>
                     <h1 class="title"> Easy to make paper</h1>
                 </div>
                 <div class="grid grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4">
-                    <!-- card no 1 -->
                     <div class="border-2 border-solid border-color-gray">Card 1</div>
                     <div class="border-2 border-solid border-color-gray">Card 2</div>
                     <div class="border-2 border-solid border-color-gray">Card 3</div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
+        <div class="gallery">
+            <div class="gallery-container">
+                <img class="gallery-item gallery-item-1" src="../img/ThayVan.jpg" data-index="1"> 
+                <img class="gallery-item gallery-item-2" src="../img/ThayVan.jpg" data-index="2">
+                <img class="gallery-item gallery-item-3" src="../img/ThayVan.jpg" data-index="3">
+                <img class="gallery-item gallery-item-4" src="../img/ThayVan.jpg" data-index="4">
+                <img class="gallery-item gallery-item-5" src="../img/ThayVan.jpg" data-index="5">
+            </div>
+            <div class="gallery-controls">
+            </div>
+            </div>
+        </div>
 
     </main>
 
@@ -183,6 +197,7 @@
         })
     </script>
     <script src="changeLanguage.js"></script>
+    <script src="gallery.js"></script>
     <!-- <script src="menuLoader.js"></script> -->
 
 
