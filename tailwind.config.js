@@ -2,6 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    screens: {
+      'tiny': '310px',
+      'sm': '644px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       colors: {
         "color-primary": "#f5f5f5",
@@ -13,12 +21,8 @@ module.exports = {
         "color-white": "#000",
         "color-blob": "#A427DF",
       },
-      screens: {
-        'xs': '320px',  // Custom screen size, you can adjust the pixel value
-        'xmd': '768px',
-      },
     },
-    
+
     container:{
       center: true,
       padding: {
