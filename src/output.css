@@ -636,6 +636,22 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-40 {
+  margin-left: 10rem;
+}
+
 .flex {
   display: flex;
 }
@@ -648,6 +664,10 @@ video {
   display: none;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .h-\[100vh\] {
   height: 100vh;
 }
@@ -656,12 +676,36 @@ video {
   height: 100%;
 }
 
+.w-1\/3 {
+  width: 33.333333%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-20 {
   width: 5rem;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
 }
 
 .-translate-x-36 {
@@ -781,6 +825,10 @@ video {
 
 .pr-96 {
   padding-right: 24rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -990,11 +1038,12 @@ video {
 }
 
 .languageSection a {
-  color: #fff;
+  color: #123;
   font-size: 15px;
   font-weight: 700;
   padding: 15px 10px;
   flex: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .languageSection .active {
@@ -1027,7 +1076,9 @@ video {
   bottom: -100px;
 }
 
-.gallery-container{
+/* Control the gallery lab activities -------------------------------------------------------------------------*/
+
+.gallery-container {
   align-items: center;
   display: flex;
   height: 400px;
@@ -1036,7 +1087,7 @@ video {
   position: relative;
 }
 
-.gallery-item{
+.gallery-item {
   height: 200px;
   opacity: 0;
   position: absolute;
@@ -1047,26 +1098,27 @@ video {
   background-size: contain;
 }
 
-.gallery-item-1{
-  left:15%;
+.gallery-item-1 {
+  left: 15%;
   opacity: 0.4;
   transform: translateX(-50%);
 }
 
-.gallery-item-2, .gallery-item-4{
+.gallery-item-2,
+.gallery-item-4 {
   height: 250px;
   opacity: 0.8;
   width: 380px;
   z-index: 1;
 }
 
-.gallery-item-2{
+.gallery-item-2 {
   left: 30%;
   transform: translateX(-50%);
 }
 
-.gallery-item-3{
-  box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+.gallery-item-3 {
+  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
   height: 300px;
   opacity: 1;
   left: 50%;
@@ -1075,25 +1127,25 @@ video {
   z-index: 2;
 }
 
-.gallery-item-4{
-  left:70%;
+.gallery-item-4 {
+  left: 70%;
   transform: translateX(-50%);
 }
 
-.gallery-item-5{
+.gallery-item-5 {
   left: 85%;
   opacity: 0.4;
   transform: translateX(-50%);
 }
 
-.gallery-controls{
+.gallery-controls {
   display: flex;
   justify-content: center;
   margin: 25px 0;
   height: 100px;
 }
 
-.gallery-controls button{
+.gallery-controls button {
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -1103,15 +1155,15 @@ video {
   text-transform: capitalize;
 }
 
-.gallery-controls-button:focus{
+.gallery-controls-button:focus {
   outline: none;
 }
 
-.gallery-controls-previous{
+.gallery-controls-previous {
   position: relative;
 }
 
-.gallery-controls-previous::before{
+.gallery-controls-previous::before {
   border: solid #000;
   border-width: 0 5px 5px 0;
   content: '';
@@ -1126,11 +1178,11 @@ video {
   left: -40px;
 }
 
-.gallery-controls-next{
+.gallery-controls-next {
   position: relative;
 }
 
-.gallery-controls-next::before{
+.gallery-controls-next::before {
   border: solid #000;
   border-width: 0 5px 5px 0;
   content: '';
@@ -1138,18 +1190,18 @@ video {
   height: 5px;
   padding: 10px;
   position: absolute;
-  right: -30px;
-  top: 45;
+  right: -40px;
+  top: 45px;
   transform: rotate(-45deg) translateY(-50%);
   transition: right 0.15s ease-in-out;
   width: 5px;
 }
 
-.gallery-controls-next:hover::before{
+.gallery-controls-next:hover::before {
   right: -40px;
 }
 
-.gallery-nav{
+.gallery-nav {
   bottom: -15px;
   display: flex;
   justify-content: center;
@@ -1167,8 +1219,20 @@ video {
   width: 10px;
 }
 
-.gallery-nav li.gallery-item-selected{
+.gallery-nav li.gallery-item-selected {
   background: #555;
+}
+
+/* Footer Ho lab ---------------------------------------------- */
+
+.footerleft {
+  background-color: rgb(44, 44, 44);
+  color: #fff;
+}
+
+.footereight {
+  background-color: rgb(62, 62, 62);
+  color: #fff;
 }
 
 .hover\:text-text-color-secondary:hover {
