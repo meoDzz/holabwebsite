@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
-  max-width: 2000px;
-}
+/* .container {
+  max-width: 100%;
+} */
 
 .circle {
   width: 40rem;
