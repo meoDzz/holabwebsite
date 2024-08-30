@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* .container {
-  max-width: 100%;
+  max-width: 2560px;
 } */
 
 .circle {
@@ -18,7 +18,7 @@
 }
 
 .description {
-  @apply xl:text-[20px] lg:text-[17px] sm:text-[10px]  md:text-[15px]  font-medium leading-snug mb-10;
+  @apply xl:text-[20px] lg:text-[17px] sm:text-[10px]  md:text-[15px]  font-medium leading-snug mb-5;
 }
 
 .image-border {
