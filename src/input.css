@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .container {
+.container {
   max-width: 2560px;
-} */
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 .circle {
   width: 40rem;
@@ -14,11 +15,11 @@
 }
 
 .title {
-  @apply text-3xl md:text-4xl font-bold leading-snug mb-10 uppercase;
+  @apply xl:text-[30px] lg:text-[27px] sm:text-[17px] md:text-[25px] font-bold leading-snug mb-5 uppercase;
 }
 
 .description {
-  @apply xl:text-[20px] lg:text-[17px] sm:text-[10px]  md:text-[15px]  font-medium leading-snug mb-5;
+  @apply xl:text-[20px] lg:text-[17px] sm:text-[10px]  md:text-[15px]  leading-snug;
 }
 
 .image-border {
@@ -88,7 +89,7 @@
 
 .quote {
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .quote:before {
@@ -106,9 +107,9 @@
   font-size: 7rem;
   /* Adjust the size as needed */
   position: absolute;
-  right: -40px;
+  right: -50px;
   /* Adjust the position as needed */
-  bottom: -100px;
+  bottom: -300px;
 }
 
 /* Control the gallery lab activities -------------------------------------------------------------------------*/
