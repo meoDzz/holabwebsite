@@ -3,19 +3,27 @@
 @tailwind utilities;
 
 .container {
-  max-width: 2560px;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  max-width: 1560px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.imageResearchTheme {
+  width: 100%;
+  max-width: 1560px;
+}
+.jaistlogo {
+  width: 100%;
+  max-width: 64px;
+}
 .circle {
   width: 40rem;
 }
 .btn {
-  @apply bg-text-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200;
+  @apply bg-text-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 mt-6 ;
 }
 
 .title {
-  @apply xl:text-[30px] lg:text-[27px] sm:text-[17px] md:text-[25px] font-bold leading-snug mb-5 uppercase;
+  @apply xl:text-[30px] lg:text-[27px] sm:text-[17px] md:text-[25px] font-bold leading-snug  uppercase;
 }
 
 .description {
@@ -26,38 +34,51 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   @apply border border-gray-400 rounded-xl shadow-lg;
 }
 .image-viewWidth {
-  width: 20vw;
+  width: 100%;
+  max-width: 700px;
+  /* width: 20vw; */
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 1560px) {
   .image-viewWidth {
-    width: 70vw;
+    width: 50vw;
     height: auto;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .image-viewWidth {
     width: 50vw;
     height: auto;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .image-viewWidth {
-    width: 20vw;
+    margin-top: 10px;
+    width: 50vw;
     height: auto;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 595px) {
   .image-viewWidth {
+    margin-top: 15px;
     width: 70vw;
     height: auto;
   }
 }
+
+@media (max-width: 426px) {
+  .image-viewWidth {
+    margin-top: 15px;
+    width: 70vw;
+    height: auto;
+  }
+}
+
 .fixed-size-image {
   width: 300px;
   height: 200px;
@@ -71,6 +92,8 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   text-align: center; /* Centers the text inside each element */
   max-width: 150px; /* Optional: Sets a max width for the section */
   margin-left: auto; /* Pushes the content to the right side */
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .languageSection a {
