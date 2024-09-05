@@ -23,11 +23,11 @@
 }
 
 .title {
-  @apply xl:text-[30px] lg:text-[27px] sm:text-[17px] md:text-[25px] font-bold leading-snug  uppercase;
+  @apply xl:text-[30px] lg:text-[27px] sm:text-[17px] md:text-[25px] font-bold uppercase;
 }
 
 .description {
-  @apply xl:text-[20px] lg:text-[17px] sm:text-[10px]  md:text-[15px]  leading-snug;
+  @apply xl:text-[20px] lg:text-[17px] sm:text-[14px]  md:text-[17px]  leading-snug;
 }
 
 .image-border {
@@ -43,31 +43,121 @@
   align-items: center;
 }
 
+/* logo Boss -------------------------------------------------- */
+.logo-round {
+  max-width: 360px;
+  @apply rounded-full;
+}
+
+
 @media (max-width: 1560px) {
   .image-viewWidth {
     width: 50vw;
     height: auto;
   }
+
+  .logo-round {
+    width: 25vw;
+  }
+  .proftitle{
+    transform: translateX(-23rem);
+  }
+  .quote:before {
+    font-size: 60px;
+    left: -20px;
+    top: -30px;
+  }
+
+  .quote:after {
+    font-size: 60px;
+    right: -20px;
+    bottom: -240px;
+  }
+
 }
+
 @media (max-width: 1250px) {
   .image-viewWidth {
     width: 50vw;
     height: auto;
   }
+
+  .logo-round {
+    width: 30vw;
+    transform: translateY(-3rem);
+  }
+  .proftitle {
+    transform: translateX(-7rem);
+
+  }
+  .quote:before {
+    font-size: 40px;
+    left: -10px;
+    top: -30px;
+  }
+
+  .quote:after {
+    font-size: 40px;
+    right: -30px;
+    bottom: -260px;
+  }
+
 }
 
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .image-viewWidth {
     margin-top: 10px;
     width: 50vw;
     height: auto;
   }
+
+  .logo-round {
+    width: 20vw;
+    transform: translateY(0.5rem);
+  }
+
+  .proftitle {
+    transform: translateX(-4rem);
+  }
+
+  .quote:before {
+    font-size: 40px;
+    left: -10px;
+    top: -30px;
+  }
+
+  .quote:after {
+    font-size: 40px;
+    right: -30px;
+    bottom: -260px;
+  }
 }
-@media (max-width: 595px) {
+
+@media (max-width: 766px) {
   .image-viewWidth {
     margin-top: 15px;
     width: 70vw;
     height: auto;
+  }
+
+  .logo-round {
+    width: 20vw;
+  }
+
+  .proftitle {
+    transform: translateX(-9rem);
+  }
+
+  .quote:before {
+    font-size: 40px;
+    left: -10px;
+    top: -30px;
+  }
+
+  .quote:after {
+    font-size: 40px;
+    right: -30px;
+    bottom: -260px;
   }
 }
 
@@ -112,27 +202,20 @@
 
 .quote {
   position: relative;
-  font-size: 20px;
 }
 
 .quote:before {
   content: open-quote;
-  font-size: 7rem;
   /* Adjust the size as needed */
   position: absolute;
-  left: -60px;
-  /* Adjust the position as needed */
-  top: -60px;
+ 
 }
 
 .quote:after {
   content: close-quote;
-  font-size: 7rem;
   /* Adjust the size as needed */
   position: absolute;
-  right: -50px;
-  /* Adjust the position as needed */
-  bottom: -300px;
+
 }
 
 /* Control the gallery lab activities -------------------------------------------------------------------------*/
@@ -296,3 +379,13 @@
   background-color: rgb(62, 62, 62);
   color: #fff;
 }
+
+
+
+
+
+
+
+
+
+

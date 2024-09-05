@@ -749,19 +749,8 @@ video {
   width: 1px;
 }
 
-.-translate-x-72 {
-  --tw-translate-x: -18rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .translate-y-5 {
   --tw-translate-y: 1.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.scale-75 {
-  --tw-scale-x: .75;
-  --tw-scale-y: .75;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -815,14 +804,6 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.whitespace-nowrap {
-  white-space: nowrap;
-}
-
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -870,10 +851,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.pr-52 {
-  padding-right: 13rem;
 }
 
 .text-left {
@@ -990,7 +967,6 @@ video {
 .title {
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 1.375;
 }
 
 @media (min-width: 644px) {
@@ -1023,13 +999,13 @@ video {
 
 @media (min-width: 644px) {
   .description {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 768px) {
   .description {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
@@ -1065,10 +1041,37 @@ video {
   align-items: center;
 }
 
+/* logo Boss -------------------------------------------------- */
+
+.logo-round {
+  max-width: 360px;
+  border-radius: 9999px;
+}
+
 @media (max-width: 1560px) {
   .image-viewWidth {
     width: 50vw;
     height: auto;
+  }
+
+  .logo-round {
+    width: 25vw;
+  }
+
+  .proftitle{
+    transform: translateX(-23rem);
+  }
+
+  .quote:before {
+    font-size: 60px;
+    left: -20px;
+    top: -30px;
+  }
+
+  .quote:after {
+    font-size: 60px;
+    right: -20px;
+    bottom: -240px;
   }
 }
 
@@ -1077,21 +1080,83 @@ video {
     width: 50vw;
     height: auto;
   }
+
+  .logo-round {
+    width: 30vw;
+    transform: translateY(-3rem);
+  }
+
+  .proftitle {
+    transform: translateX(-7rem);
+  }
+
+  .quote:before {
+    font-size: 40px;
+    left: -10px;
+    top: -30px;
+  }
+
+  .quote:after {
+    font-size: 40px;
+    right: -30px;
+    bottom: -260px;
+  }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .image-viewWidth {
     margin-top: 10px;
     width: 50vw;
     height: auto;
   }
+
+  .logo-round {
+    width: 20vw;
+    transform: translateY(0.5rem);
+  }
+
+  .proftitle {
+    transform: translateX(-4rem);
+  }
+
+  .quote:before {
+    font-size: 40px;
+    left: -10px;
+    top: -30px;
+  }
+
+  .quote:after {
+    font-size: 40px;
+    right: -30px;
+    bottom: -260px;
+  }
 }
 
-@media (max-width: 595px) {
+@media (max-width: 766px) {
   .image-viewWidth {
     margin-top: 15px;
     width: 70vw;
     height: auto;
+  }
+
+  .logo-round {
+    width: 20vw;
+  }
+
+  .proftitle {
+    transform: translateX(-9rem);
+  }
+
+  .quote:before {
+    font-size: 40px;
+    left: -10px;
+    top: -30px;
+  }
+
+  .quote:after {
+    font-size: 40px;
+    right: -30px;
+    bottom: -260px;
   }
 }
 
@@ -1141,27 +1206,18 @@ video {
 
 .quote {
   position: relative;
-  font-size: 20px;
 }
 
 .quote:before {
   content: open-quote;
-  font-size: 7rem;
   /* Adjust the size as needed */
   position: absolute;
-  left: -60px;
-  /* Adjust the position as needed */
-  top: -60px;
 }
 
 .quote:after {
   content: close-quote;
-  font-size: 7rem;
   /* Adjust the size as needed */
   position: absolute;
-  right: -50px;
-  /* Adjust the position as needed */
-  bottom: -300px;
 }
 
 /* Control the gallery lab activities -------------------------------------------------------------------------*/
@@ -1337,10 +1393,6 @@ video {
     width: 50%;
   }
 
-  .md\:w-1 {
-    width: 0.25rem;
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1363,3 +1415,13 @@ video {
     display: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
