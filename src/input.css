@@ -23,11 +23,11 @@
 }
 
 .title {
-  @apply xl:text-[30px] lg:text-[27px] sm:text-[17px] md:text-[25px] font-bold uppercase;
+  @apply xl:text-[30px] lg:text-[27px] sm:text-[23px] md:text-[25px] font-bold uppercase;
 }
 
 .description {
-  @apply xl:text-[20px] lg:text-[17px] sm:text-[14px]  md:text-[17px]  leading-snug;
+  @apply xl:text-[20px] lg:text-[17px] sm:text-[16px]  md:text-[17px]  leading-snug;
 }
 
 .image-border {
@@ -104,7 +104,7 @@
 
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 870px) {
   .image-viewWidth {
     margin-top: 10px;
     width: 50vw;
@@ -112,8 +112,8 @@
   }
 
   .logo-round {
-    width: 20vw;
-    transform: translateY(0.5rem);
+    width: 30vw;
+    transform: translateY(-4rem);
   }
 
   .proftitle {
@@ -129,23 +129,24 @@
   .quote:after {
     font-size: 40px;
     right: -30px;
-    bottom: -260px;
+    bottom: -300px;
   }
 }
 
-@media (max-width: 766px) {
+@media (min-width: 479px) and (max-width: 767px) {
   .image-viewWidth {
-    margin-top: 15px;
-    width: 70vw;
+    margin-top: 10px;
+    width: 50vw;
     height: auto;
   }
 
   .logo-round {
-    width: 20vw;
+    width: 30vw;
+    transform: translateY(0.5rem);
   }
 
   .proftitle {
-    transform: translateX(-9rem);
+    transform: translateX(-3rem);
   }
 
   .quote:before {
@@ -157,17 +158,40 @@
   .quote:after {
     font-size: 40px;
     right: -30px;
-    bottom: -260px;
+    bottom: -20vh;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 478px) {
   .image-viewWidth {
     margin-top: 15px;
     width: 70vw;
     height: auto;
   }
+
+  .logo-round {
+    width: 50vw;
+    transform: translateY(0.5rem);
+  }
+
+  .proftitle {
+    transform: translateX(0rem);
+  }
+
+  .quote:before {
+    font-size: 40px;
+    left: -10px;
+    top: -30px;
+  }
+
+  .quote:after {
+    font-size: 40px;
+    right: -30px;
+    bottom: -30vh;
+  }
 }
+
+
 
 .fixed-size-image {
   width: 300px;
