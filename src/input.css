@@ -27,7 +27,7 @@
 }
 
 .description {
-  @apply xl:text-[20px] lg:text-[17px] sm:text-[16px]  md:text-[17px]  leading-snug;
+  @apply xl:text-[20px] lg:text-[17px] sm:text-[16px]  md:text-[17px]  leading-snug ; 
 }
 
 .image-border {
@@ -160,6 +160,7 @@
     right: -30px;
     bottom: -20vh;
   }
+  
 }
 
 @media (max-width: 478px) {
@@ -188,6 +189,19 @@
     font-size: 40px;
     right: -30px;
     bottom: -30vh;
+  }
+
+  .footerleft{
+    @apply hidden;
+  }
+  .footerieght {
+    @apply hidden;
+  }
+  .jaistinfor {
+    @apply visible mb-5;
+  }
+  .timeline{
+    @apply hidden;
   }
 }
 
@@ -392,11 +406,38 @@
   background: #555;
 }
 
+
+.gallery-controls button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+  /* Adjust the size here */
+  margin: 0 50px;
+  padding: 0 12px;
+  text-transform: capitalize;
+}
+
+
+.gallery-controls button:hover {
+  scale: 1.5;
+  color: coral;
+}
+/* .gallery-controls-previous button {
+  font-size: 25px;
+}
+
+.gallery-controls-next button {
+  font-size: 25px;
+} */
+
 /* Footer Ho lab ---------------------------------------------- */
 
 .footerleft {
   background-color: rgb(44, 44, 44);
   color: #fff;
+    margin-right: auto;
+      margin-left: auto;
 }
 
 .footereight {
@@ -404,9 +445,12 @@
   color: #fff;
 }
 
-
-
-
+.footercontainer{
+  max-width: 1560px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 
 
