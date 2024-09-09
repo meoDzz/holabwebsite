@@ -73,7 +73,9 @@
     right: -20px;
     bottom: -240px;
   }
-
+  .galary{
+    scale: 0.9;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -198,7 +200,8 @@
     @apply hidden;
   }
   .jaistinfor {
-    @apply visible mb-5;
+    display: block;
+    margin-bottom: 1.25rem;
   }
   .timeline{
     @apply hidden;
@@ -265,6 +268,7 @@
   margin: 0 auto;
   max-width: 1000px;
   position: relative;
+  /* scale: 0.9; */
 }
 
 .gallery-item {
@@ -276,6 +280,7 @@
   z-index: 0;
   border-radius: 15px;
   background-size: contain;
+  
 }
 
 .gallery-item-1 {
@@ -287,7 +292,7 @@
 .gallery-item-2,
 .gallery-item-4 {
   height: 250px;
-  opacity: 0.8;
+  opacity: 0.7;
   width: 380px;
   z-index: 1;
 }
@@ -448,10 +453,53 @@
 .footercontainer{
   max-width: 1560px;
   width: 100%;
+  overflow: hidden;
   margin-right: auto;
   margin-left: auto;
+  flex-shrink: 0;
 }
 
+
+
+
+
+
+.text-contain-wrap {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  /* Text takes the remaining space, image takes auto width */
+  grid-gap: 20px;
+  /* Space between the text and the image */
+  align-items: start;
+  /* Align image to the top */
+}
+
+.image img {
+  max-width: 150px;
+  /* Set the image width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.text {
+  line-height: 1.5;
+  /* Adjust line spacing for text readability */
+}
+
+
+
+/* --------------------- On going project --------------------------- */
+
+.imageongoing{
+  float: left;
+  margin: 5px 5px;
+  border-radius: 5px;
+}
+
+.imageongoing img{
+  max-width: 20vw;
+  
+}
 
 
 

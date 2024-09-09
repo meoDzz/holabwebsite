@@ -661,8 +661,8 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.block {
+  display: block;
 }
 
 .flex {
@@ -739,6 +739,11 @@ video {
 
 .w-px {
   width: 1px;
+}
+
+.translate-y-28 {
+  --tw-translate-y: 7rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .translate-y-5 {
@@ -824,6 +829,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -888,10 +897,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.font-semibold {
-  font-weight: 600;
 }
 
 .capitalize {
@@ -1081,6 +1086,10 @@ video {
     right: -20px;
     bottom: -240px;
   }
+
+  .galary{
+    scale: 0.9;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -1206,7 +1215,7 @@ video {
   }
 
   .jaistinfor {
-    visibility: visible;
+    display: block;
     margin-bottom: 1.25rem;
   }
 
@@ -1276,6 +1285,7 @@ video {
   margin: 0 auto;
   max-width: 1000px;
   position: relative;
+  /* scale: 0.9; */
 }
 
 .gallery-item {
@@ -1298,7 +1308,7 @@ video {
 .gallery-item-2,
 .gallery-item-4 {
   height: 250px;
-  opacity: 0.8;
+  opacity: 0.7;
   width: 380px;
   z-index: 1;
 }
@@ -1455,8 +1465,44 @@ video {
 .footercontainer{
   max-width: 1560px;
   width: 100%;
+  overflow: hidden;
   margin-right: auto;
   margin-left: auto;
+  flex-shrink: 0;
+}
+
+.text-contain-wrap {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  /* Text takes the remaining space, image takes auto width */
+  grid-gap: 20px;
+  /* Space between the text and the image */
+  align-items: start;
+  /* Align image to the top */
+}
+
+.image img {
+  max-width: 150px;
+  /* Set the image width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.text {
+  line-height: 1.5;
+  /* Adjust line spacing for text readability */
+}
+
+/* --------------------- On going project --------------------------- */
+
+.imageongoing{
+  float: left;
+  margin: 5px 5px;
+  border-radius: 5px;
+}
+
+.imageongoing img{
+  max-width: 20vw;
 }
 
 .hover\:text-text-color-secondary:hover {
@@ -1469,6 +1515,10 @@ video {
 }
 
 @media (min-width: 644px) {
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1505,7 +1555,6 @@ video {
     display: none;
   }
 }
-
 
 
 
