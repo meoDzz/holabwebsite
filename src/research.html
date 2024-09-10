@@ -16,62 +16,61 @@
     <header>
         <nav class="container bg-color-primary flex justify-between items-center">
             <!-- <div class="w-20 py-5 text-text-color-secondary font-bold text-3xl flex-row">
-                <a href="#home">
-                    <span class="text-color-white"> Soft Haptics</span>Lab.
-                </a>
-                <div class="flex justify-center">
-                    <img class="w-32 h-32" src="../img/jaistlogo.jpg" alt="Lab Image">
-                </div>
-            </div> -->
+                    <a href="#home">
+                        <span class="text-color-white"> Soft Haptics</span>Lab.
+                    </a>
+                    <div class="flex justify-center">
+                        <img class="w-32 h-32" src="../img/jaistlogo.jpg" alt="Lab Image">
+                    </div>
+                </div> -->
             <div class="w-20 py-5 text-text-color-secondary font-bold text-3xl flex items-center">
-                <a href="./index.html" class="mr-4">
+                <a href="#home" class="mr-4">
                     <span class="text-color-white"> Soft Haptics</span>Lab.
                 </a>
-                <img class="w-32 h-32" src="../img/jaistlogoround.jpg" alt="Lab Image">
+                <img class="jaistlogo" src="../img/jaistlogoround.png" alt="Lab Image">
             </div>
             <div>
                 <ul class=" hidden lg:flex items-center space-x-6">
                     <li><a href="./index.html"
-                            class="hover:text-text-color-secondary ease-in duration-200 capitalize">Home</a>
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize description">Home</a>
                     </li>
                     <li><a href="./research.html"
-                            class="hover:text-text-color-secondary ease-in duration-200 capitalize">Research</a></li>
-                    <li><a href="./member.html"
-                            class="hover:text-text-color-secondary ease-in duration-200 capitalize">Members</a></li>
-                    <li><a href="./publications.html"
-                            class="hover:text-text-color-secondary ease-in duration-200 capitalize">Publications</a>
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize description">Research</a>
                     </li>
-                    <!-- <li><a href="#home"
-                            class="hover:text-text-color-secondary ease-in duration-200 capitalize">Access</a></li>
-                    </li> -->
-
-                    <li><button
-                            class="bg-text-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">
+                    <li><a href="./member.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize description">Members</a>
+                    </li>
+                    <li><a href="./publications.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize description">Publications</a>
+                    </li>
+    
+    
+                    <li><button class="btn">
                             Apply to our lab</button> </li>
                 </ul>
             </div>
-
-
+    
+    
             <!-- mobile-screen -->
-
+    
             <div id="hamburger" class="lg:hidden cursor-pointer z-50">
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div id="menu" class=" hidden bg-white h-[100vh] absolute inset-0">
                 <ul class=" h-full grid place-items-center py-20">
                     <li><a id="hlink" href="./index.html"
-                            class="hover:text-text-color-secondary ease-in duration-200">Home</a>
+                            class="hover:text-text-color-secondary ease-in duration-200 description">Home</a>
                     </li>
                     <li><a id="hlink" href="./research.html"
-                            class="hover:text-text-color-secondary ease-in duration-200">Research</a></li>
+                            class="hover:text-text-color-secondary ease-in duration-200 description">Research</a></li>
                     <li><a id="hlink" href="#Members"
-                            class="hover:text-text-color-secondary ease-in duration-200">Members</a></li>
+                            class="hover:text-text-color-secondary ease-in duration-200 description">Members</a></li>
                     <li><a id="hlink" href="#Publications"
-                            class="hover:text-text-color-secondary ease-in duration-200">Publications</a>
+                            class="hover:text-text-color-secondary ease-in duration-200 description">Publications</a>
                     </li>
-                    <!-- <li><a id="hlink" href="#Access"
-                            class="hover:text-text-color-secondary ease-in duration-200">Access</a>
-                    </li> -->
+                    <li><a id="hlink" href="#Access"
+                            class="hover:text-text-color-secondary ease-in duration-200 description">Access</a>
+                    </li>
                     <li><button class="btn">
                             Apply to our lab</button> </li>
                 </ul>
@@ -89,41 +88,141 @@
         </div>
         <!-- <img class="container py-20 -z-30 " src="../img/holabresearchmain.jpg" alt="Lab Image"> -->
         <div class="container py-20 -z-30 ">
-            <div class="flex flex-col items-center md:flex-row ">
-                <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+            <div class="flex flex-col items-center">
+                <div class="text-center mb-12 md:text-left md:pr-10">
                     <h1 class="title title-focusedproject ">Focused Projects</h1>
-                    <p class=" description description-focusedproject leading-relaxed mb-10 text-justify mt-10">
-                        IoTouch: Enablers for implementation of Tactile Internet (funded by JST/PRESTO). More details can be
-                        found <>
-
-                        Tombo Propellers: Deformable propellers for increasing the safety of drones (funded by
-                        JST/SCORE). More details can be found</p>
-                    <button class="btn"> Youtube</button>
-                    <button class="btn"> Twitter</button>
+                    <ul class="list-decimal text-justify">
+                        <li>
+                            <p class=" description"> <span class="text-red-600 font-bold">IoTouch</span>: enablers for implementation of Tactile Internet (funded by JST/PRESTO). More details can be found <a href="https://sites.google.com/view/iotouch/home" class="paperlink"> HERE</a></p>
+                        </li>
+                        <li>
+                            <p class=" description"> <span class="text-red-600 font-bold">Tombo Propellers</span>: Deformable propellers for increasing the safety of drones (funded by JST/SCORE). More details can be found <a href="https://sites.google.com/view/scoredeformablepropeller/home"
+                                    class="paperlink"> HERE</a></p>
+                        </li>
+                    </ul>
+                    <div class="flex justify-center">
+                        <div class="image-viewWidth">
+                            <iframe width="660" height="335" src="https://www.youtube.com/embed/NN2u8YBLITY?si=Y1jY9BZY2mcvAgXH"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
 
+
+        <div class="container py-20 -z-30 ">
+            <div class="flex flex-col items-center">
+                <div class="text-center mb-12  md:pr-10">
+                    <h1 class="title title-ongoingproject ">On-going Projects </h1>
+                    <ul class="list-decimal text-justify">
+                        <li>
+                            <p class=" description underline underline-offset-2 mb-3"> Mechanics of wet adhesion in soft interaction with patterned morphology</p>
+                            <p class="description text-justify mb-4"> We present an analytical method for studying the role of the micropatterned morphology of soft fingers with wet adhesion
+                            in grasping a deformable thin shell. This letter originated from a project on a robotic platform for autonomous
+                            attachment and removal of a soft contact lens in a “human eye” under a wet environment. In this scenario, a contact lens
+                            (hemispherical thin shell) was gripped by a soft-fingered hand in three conditions: inside/outside a liquid environment
+                            and when the contact lens was in contact with a convex curved substrate (as an eye). Two fingertip surfaces were
+                            compared: a flat surface, and a micropatterned surface inspired by the adhesion mechanism of a tree-frog's toes. The
+                            pattern of the latter comprised 3600 square cells, each of size 85 μm × 85 μm interspaced by 15 μm. A proposed
+                            analytical model was utilized to evaluate the grasp forces in both types of fingertip surface. The forces were
+                            subsequently verified by application in grasping a contact lens. The experimental results showed good agreement with the
+                            analysis as the micropattern pad decreased the preload and deformation of the shell 1.1-2× lower than that of the flat
+                            surface. This letter could be extended to model grasping interfaces with deformable curvature objects in wet and high
+                            moisture content environments.</p>
+                            <div class="flex justify-center">
+                                <div class="image-viewWidth">
+                                    <iframe width="660" height="335" src="https://www.youtube.com/embed/cMkQ40DDQ_8?si=od2te57f83pqkB6k"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-center mt-5">
+                                <div class="image-viewWidth">
+                                <iframe width="660" height="335" src="https://www.youtube.com/embed/e_1dGI5F9GQ?si=XDnYWmAJ9rNWMifV"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <ul class="list-disc text-justify">
+                            
+                            
+                                <li>Pho Van Nguyen, Van Anh Ho, <a href="https://ieeexplore.ieee.org/document/8613791" class="paperlink">Grasping Interface with Wet Adhesion and Patterned Morphology: Case of Thin Shell</a>, 
+                                    IEEE
+                                    Robotics and Automation Letters (RA-L), Vol. 4, Issue 2, pp. 792-799, April 2019.</li>
+                                <li>Pho Van Nguyen, Van Anh Ho, Mechanics of wet adhesion in soft interaction with patterned morphology,
+                                    Bioinspiration &
+                                    Biomimetics, Vol. 14, No. 1, Dec, 2018</li>
+                            </ul>
+                           
+                        </li>
+
+
+                        <li>
+                            <p class=" description underline underline-offset-2 mb-3 mt-10"> Whole-body Tactile sensing: TacLINK</p>
+                            <p class="description text-justify mb-4"> The sense of touch allows individuals to physicallyinteract with and better perceive their environment. Touch is
+                            evenmore crucial for robots, as robots equipped with thorough tactilesensation can more safely interact with their
+                            surroundings, includ-ing with humans. This study describes a recently developed large-scale tactile sensing system for a
+                            robotic link, called TacLINK,which can be assembled to form a whole-body tactile sensing robotarm. The proposed system
+                            is an elongated structure consistingof a rigid transparent bone covered by continuous artificial softskin. This soft
+                            skin of TacLINK not only provides a pleasantinteractive interface but can also change outer skin morphologyby inflation
+                            at low pressure. Upon contact with the surroundingenvironment, TacLINK perceives tactile information through the3-D
+                            deformation of its skin, resulting from the tracking of anarray of markers on its inner wall by a stereo camera located
+                            atboth ends of the transparent bone. A finite element model wasformulated to describe the relationship between applied
+                            force andthe displacements of markers, allowing detailed tactile informa-tion, such as contact location and force
+                            distribution, to be derivedsimultaneously, regardless of the number of contacts. TacLINKis scalable in size, durable in
+                            operation, and low in cost, as wellas being a high performance system, characteristics that can beexploited in the
+                            design of interactive robotic arms, prostheticarms, and service robots. This study describes the design of theTacLINK,
+                            as well as its modeling, implementation and evaluation,with the results suggesting that similar tactile sensing systems
+                            canbe widely applied in robot</p>
+                            <div class="flex justify-center">
+                                <div class="image-viewWidth">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uvDtyXpf2HU?si=YNs0o3bkYdSM5oEY"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        
+                            <div class="flex justify-center mt-5">
+                                <div class="image-viewWidth">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nWlMdr41lYU?si=cgi8pd9fqbdi64jd"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        
+                            <ul class="list-disc text-justify mt-5">
+                                <li>Lac Van Duong Van Anh Ho, <a href="https://ieeexplore.ieee.org/document/9247533" class="paperlink">Large-Scale Vision-Based Tactile Sensing for Robot Links: Design, Modeling, and Evaluation</a>,
+                                submitted to TRO. </li>
+                                <li>Lac Duong, Rei Asahina, Jia Wang Van Anh Ho, <a href="https://ieeexplore.ieee.org/abstract/document/8722814" class="paperlink">Development of a Vision-Based Soft Tactile Muscularis</a> , in Proc. 2nd IEEE
+                                Int. Conf. Soft Robot. (RoboSoft), Apr. 2019, pp. 343–348</li>
+                            </ul>
+                        
+                        </li>
+
+
+                    </ul>
+                    
+                </div>
+        
                 <div class="flex justify-center w-full md:w-1/2">
                     <img src="../img/lab2023.jpeg" alt="HolabImage" class="image-viewWidth image-border">
                 </div>
             </div>
         </div>
 
+
         <div class="container py-20 -z-30 ">
             <h1 class="title title-ongoingproject ">On-going Projects </h1>
-            <p class="title ">Mechanics of wet adhesion in soft interaction with patterned morphology </p>
-            <p>
-                In this scenario, a contact lens (hemispherical thin shell)
-                was gripped by a soft-fingered hand in three conditions: inside/outside a liquid environment and
-                when the contact lens was in contact with a convex curved substrate (as an eye). Two fingertip
-                surfaces were compared: a flat surface, and a micropatterned surface inspired by the adhesion
-                mechanism of a tree-frog's toes. The pattern of the latter comprised 3600 square cells, each of
-                size 85 μm × 85 μm interspaced by 15 μm. A proposed analytical model was utilized to evaluate
-                the grasp forces in both types of fingertip surface. The forces were subsequently verified by
-                application in grasping a contact lens. The experimental results showed good agreement with the
-                analysis as the micropattern pad decreased the preload and deformation of the shell 1.1-2× lower
-                than that of the flat surface. This letter could be extended to model grasping interfaces with
-                deformable curvature objects in wet and high moisture content environments.
-            </p>
+
             <div class="flex flex-col items-center md:flex-row ">
 
                 <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
