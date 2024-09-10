@@ -528,6 +528,10 @@
 }
 
 
+/* Paper Link-------------------------------- */
 
+.paperlink {
+  @apply text-blue-800 underline underline-offset-2;
+}
 
 
