@@ -600,8 +600,16 @@ video {
   }
 }
 
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
+}
+
+.relative {
+  position: relative;
 }
 
 .inset-0 {
@@ -655,6 +663,10 @@ video {
 
 .mt-12 {
   margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-5 {
@@ -802,27 +814,13 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-text-color-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 125 59 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
 .p-5 {
   padding: 1.25rem;
-}
-
-.px-9 {
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
 }
 
 .py-11 {
@@ -833,11 +831,6 @@ video {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .py-5 {
@@ -914,14 +907,6 @@ video {
   color: rgb(255 125 59 / var(--tw-text-opacity));
 }
 
-.underline {
-  text-decoration-line: underline;
-}
-
-.underline-offset-2 {
-  text-underline-offset: 2px;
-}
-
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -969,8 +954,11 @@ video {
 }
 
 .title {
+  margin-bottom: 1.75rem;
   font-weight: 700;
   text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 
 @media (min-width: 644px) {
@@ -1043,6 +1031,46 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.image-member {
+  width: 100%;
+  /* width: 20vw; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listproject {
+  margin-bottom: 0.75rem;
+  margin-top: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+@media (min-width: 644px) {
+  .listproject {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 768px) {
+  .listproject {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .listproject {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .listproject {
+    font-size: 23px;
+  }
 }
 
 /* logo Boss -------------------------------------------------- */
@@ -1333,11 +1361,13 @@ video {
   opacity: 0.7;
   width: 380px;
   z-index: 1;
+  background: #ffffff;
 }
 
 .gallery-item-2 {
   left: 30%;
   transform: translateX(-50%);
+  background: #ffffff;
 }
 
 .gallery-item-3 {
@@ -1348,11 +1378,13 @@ video {
   transform: translateX(-50%);
   width: 430px;
   z-index: 2;
+  background: #ffffff;
 }
 
 .gallery-item-4 {
   left: 70%;
   transform: translateX(-50%);
+  background: #ffffff;
 }
 
 .gallery-item-5 {
@@ -1540,10 +1572,6 @@ video {
 .hover\:text-text-color-secondary:hover {
   --tw-text-opacity: 1;
   color: rgb(255 125 59 / var(--tw-text-opacity));
-}
-
-.hover\:opacity-80:hover {
-  opacity: 0.8;
 }
 
 @media (min-width: 310px) {

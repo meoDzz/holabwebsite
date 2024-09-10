@@ -23,7 +23,7 @@
 }
 
 .title {
-  @apply xl:text-[30px] lg:text-[27px] sm:text-[23px] md:text-[25px] font-bold uppercase;
+  @apply xl:text-[30px] lg:text-[27px] sm:text-[23px] md:text-[25px] font-bold uppercase text-blue-800 mb-7;
 }
 
 .description {
@@ -43,6 +43,18 @@
   align-items: center;
 }
 
+.image-member {
+  width: 100%;
+
+  /* width: 20vw; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listproject{
+  @apply mb-3 mt-7 xl:text-[23px] lg:text-[20px] sm:text-[19px] md:text-[20px] text-blue-700;
+}
 /* logo Boss -------------------------------------------------- */
 .logo-round {
   max-width: 360px;
@@ -320,11 +332,13 @@
   opacity: 0.7;
   width: 380px;
   z-index: 1;
+  background: #ffffff;
 }
 
 .gallery-item-2 {
   left: 30%;
   transform: translateX(-50%);
+  background: #ffffff;
 }
 
 .gallery-item-3 {
@@ -335,10 +349,12 @@
   transform: translateX(-50%);
   width: 430px;
   z-index: 2;
+  background: #ffffff;
 }
 .gallery-item-4 {
   left: 70%;
   transform: translateX(-50%);
+  background: #ffffff;
 }
 
 .gallery-item-5 {
