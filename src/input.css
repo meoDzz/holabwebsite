@@ -4,7 +4,7 @@
 
 .container {
   max-width: 1560px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:  'sans-serif';
 }
 
 .imageResearchTheme {
@@ -27,7 +27,7 @@
 }
 
 .description {
-  @apply xl:text-[20px] lg:text-[17px] sm:text-[16px]  md:text-[17px]  leading-snug ; 
+  @apply xl:text-[20px] lg:text-[17px] sm:text-[16px]  md:text-[17px]  leading-snug; 
 }
 
 .image-border {
