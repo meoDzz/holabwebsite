@@ -21,7 +21,9 @@
 .btn {
   @apply bg-text-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 mt-6 ;
 }
-
+.logoJaist{
+  @apply px-9 py-3 rounded-md capitalize font-bold hover:scale-125 ease-in duration-200;
+}
 .title {
   @apply xl:text-[30px] lg:text-[27px] sm:text-[23px] md:text-[25px] font-bold uppercase text-blue-800 mb-3;
 }
@@ -472,7 +474,12 @@
 
 .gallery-controls button:hover {
   scale: 1.5;
+  /* background-color: burlywood; */
   color: coral;
+}
+
+.gallery-controls button:focus {
+  outline: none; /* Loại bỏ viền khi nút được focus */
 }
 /* .gallery-controls-previous button {
   font-size: 25px;
