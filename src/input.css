@@ -65,7 +65,7 @@
 /* logo Boss -------------------------------------------------- */
 .logo-round {
   max-width: 360px;
-  @apply rounded-full;
+
 }
 
 @media (min-width: 1561px) {
@@ -515,57 +515,137 @@
 
 
 
-
-
-
-.text-contain-wrap {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  /* Text takes the remaining space, image takes auto width */
-  grid-gap: 20px;
-  /* Space between the text and the image */
-  align-items: start;
-  /* Align image to the top */
-}
-
-.image img {
-  max-width: 150px;
-  /* Set the image width as needed */
-  height: auto;
-  /* Maintain aspect ratio */
-}
-
-.text {
-  line-height: 1.5;
-  /* Adjust line spacing for text readability */
+.gradient-background {
+  background: #FFF4E6;
+  color: black; /* Text contrast for gradient */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  text-align: center;
 }
 
 
-
-/* --------------------- On going project --------------------------- */
-
-.imageongoing{
-  float: left;
-  margin: 5px 5px;
-  border-radius: 5px;
+/* lab director */
+/* Lab Director Section */
+.lab-director-section .container {
+  background: #FFF4E6;
+  width: 100%;
+  max-width: 1000px;
+  /* background: white; */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.imageongoing img{
-  max-width: 20vw;
-  
+.lab-director-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* .director-photo {
+  flex: 1;
+  max-width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.director-photo {
+  flex: 1;
+  max-width: 270px; /* Constrain width */
+  height: auto; /* Maintain the correct aspect ratio */
+  border-radius: 10px; /* Rounded corners for elegance */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  object-fit: cover; /* Ensures the image doesn't stretch */
+}
+.director-details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a2e66; /* Dark Blue for professionalism */
+  margin-bottom: 15px;
+}
+
+.director-message {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 30px;
+}
+
+/* .director-message::before {
+  content: "“";
+  font-size: 2.5rem;
+  color: #1a2e66;
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+
+.director-message::after {
+  content: "”";
+  font-size: 2.5rem;
+  color: #1a2e66;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+} */
+
+.director-info {
+  margin-top: 15px;
+}
+
+.director-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a2e66;
+}
+
+.director-role {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.director-email {
+  font-size: 1rem;
+  color: #0070c9;
+  text-decoration: none;
+}
+
+.director-email:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .lab-director-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .director-details {
+      align-items: center;
+  }
+
+  .director-message {
+      padding-left: 15px;
+  }
 }
 
 
-/* Paper Link-------------------------------- */
-
-.paperlink {
-  @apply text-blue-800 underline underline-offset-2;
-}
 
 
-.line {
-  height: 2px; /* Line thickness */
-  background-color: #0890ff; /* Line color */
-  width: 60%; /* Adjust width as needed */
-  margin: 20px auto; /* Center the line and adjust spacing */
-}

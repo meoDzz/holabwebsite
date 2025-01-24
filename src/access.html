@@ -1,0 +1,554 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/lab2023.jpeg">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-color-primary text-color-white tracking-wider mx-auto">
+
+    <header>
+        <nav class="container bg-color-primary flex justify-between items-center">
+            <!-- <div class="w-20 py-5 text-text-color-secondary font-bold text-3xl flex-row">
+                    <a href="#home">
+                        <span class="text-color-white"> Soft Haptics</span>Lab.
+                    </a>
+                    <div class="flex justify-center">
+                        <img class="w-32 h-32" src="../img/jaistlogo.jpg" alt="Lab Image">
+                    </div>
+                </div> -->
+            <div class="w-20 py-5 text-text-color-secondary font-bold text-3xl flex items-center">
+                <a href="#home" class="mr-4">
+                    <span class="text-color-white"> Soft Haptics</span>Lab.
+                </a>
+                <!-- <img class="jaistlogo" src="../img/jaistlogoround.png" alt="Lab Image"> -->
+            </div>
+            <div>
+                <ul class=" hidden lg:flex items-center space-x-6">
+                    <li><a href="./index.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize description">Home</a>
+                    </li>
+                    <li><a href="./research.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize description">Research</a>
+                    </li>
+                    <li><a href="./member.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize description">Members</a>
+                    </li>
+                    <li><a href="./publications.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize description">Publications</a>
+                    </li>
+                    <li><button
+                        class="logoJaist">
+                        <a href="https://www.jaist.ac.jp/english/" target="_blank">
+                            <img class="jaistlogo" src="../img/jaistlogoround.png" alt="Lab Image">
+                        </a></button> </li>
+    
+                    <!-- <li><button class="btn">
+                            Apply to our lab</button> </li> -->
+                </ul>
+            </div>
+    
+    
+            <!-- mobile-screen -->
+    
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class=" hidden bg-white h-[100vh] absolute inset-0">
+                <ul class=" h-full grid place-items-center py-20">
+                    <li><a id="hlink" href="./index.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 description">Home</a>
+                    </li>
+                    <li><a id="hlink" href="./research.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 description">Research</a></li>
+                    <li><a id="hlink" href="#Members"
+                            class="hover:text-text-color-secondary ease-in duration-200 description">Members</a></li>
+                    <li><a id="hlink" href="#Publications"
+                            class="hover:text-text-color-secondary ease-in duration-200 description">Publications</a>
+                    </li>
+                    <!-- <li><button class="btn">
+                            Apply to our lab</button> </li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="languageSection">
+                <a href="#" language='english' class="active"> ENG</a>
+                <a href="#" language='japanese'> JP</a>
+            </div>
+        </div>
+        <!-- <img class="container py-20 -z-30 " src="../img/holabresearchmain.jpg" alt="Lab Image"> -->
+        <div class="container py-20 -z-30 ">
+            <div class="flex flex-col items-center">
+                <div class="text-center mb-12 ">
+                    <h1 class="title title-focusedproject ">Access</h1>
+                    <ul class="list-decimal text-justify">
+                        <li>
+                            <p class=" description"> <span class="text-red-600 font-bold">IoTouch</span>: enablers for implementation of Tactile Internet (funded by JST/PRESTO). More details can be found <a href="https://sites.google.com/view/iotouch/home" class="paperlink"> HERE</a></p>
+                        </li>
+                        <li>
+                            <p class=" description"> <span class="text-red-600 font-bold">Tombo Propellers</span>: Deformable propellers for increasing the safety of drones (funded by JST/SCORE). More details can be found <a href="https://sites.google.com/view/scoredeformablepropeller/home"
+                                    class="paperlink"> HERE</a></p>
+                        </li>
+                    </ul>
+                    <div class="flex justify-center">
+                        <div class="image-viewWidth">
+                            <iframe width="660" height="335" src="https://www.youtube.com/embed/NN2u8YBLITY?si=Y1jY9BZY2mcvAgXH"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container py-20 -z-30 ">
+            <div class="flex flex-col items-center">
+                <div class="text-center mb-12 ">
+                    <h1 class="title title-ongoingproject ">On-going Projects </h1>
+                    <ul class="list-decimal text-justify">
+                        <li>
+                            <p class=" description listproject "> Mechanics of wet adhesion in soft interaction with patterned morphology</p>
+                            <p class="description text-justify mb-4"> We present an analytical method for studying the role of the micropatterned morphology of soft fingers with wet adhesion
+                            in grasping a deformable thin shell. This letter originated from a project on a robotic platform for autonomous
+                            attachment and removal of a soft contact lens in a “human eye” under a wet environment. In this scenario, a contact lens
+                            (hemispherical thin shell) was gripped by a soft-fingered hand in three conditions: inside/outside a liquid environment
+                            and when the contact lens was in contact with a convex curved substrate (as an eye). Two fingertip surfaces were
+                            compared: a flat surface, and a micropatterned surface inspired by the adhesion mechanism of a tree-frog's toes. The
+                            pattern of the latter comprised 3600 square cells, each of size 85 μm × 85 μm interspaced by 15 μm. A proposed
+                            analytical model was utilized to evaluate the grasp forces in both types of fingertip surface. The forces were
+                            subsequently verified by application in grasping a contact lens. The experimental results showed good agreement with the
+                            analysis as the micropattern pad decreased the preload and deformation of the shell 1.1-2× lower than that of the flat
+                            surface. This letter could be extended to model grasping interfaces with deformable curvature objects in wet and high
+                            moisture content environments.</p>
+                            <div class="flex justify-center">
+                                <div class="image-viewWidth">
+                                    <iframe width="660" height="335" src="https://www.youtube.com/embed/cMkQ40DDQ_8?si=od2te57f83pqkB6k"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-center mt-5">
+                                <div class="image-viewWidth">
+                                <iframe width="660" height="335" src="https://www.youtube.com/embed/e_1dGI5F9GQ?si=XDnYWmAJ9rNWMifV"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <ul class="list-disc text-justify">
+                            
+                            
+                                <li>Pho Van Nguyen, Van Anh Ho, <a href="https://ieeexplore.ieee.org/document/8613791" class="paperlink">Grasping Interface with Wet Adhesion and Patterned Morphology: Case of Thin Shell</a>, 
+                                    IEEE
+                                    Robotics and Automation Letters (RA-L), Vol. 4, Issue 2, pp. 792-799, April 2019.</li>
+                                <li>Pho Van Nguyen, Van Anh Ho, Mechanics of wet adhesion in soft interaction with patterned morphology,
+                                    Bioinspiration &
+                                    Biomimetics, Vol. 14, No. 1, Dec, 2018</li>
+                            </ul>
+                           
+                        </li>
+
+
+                        <li>
+                            <p class=" description listproject"> Whole-body Tactile sensing: TacLINK</p>
+                            <p class="description text-justify mb-4"> The sense of touch allows individuals to physicallyinteract with and better perceive their environment. Touch is
+                            evenmore crucial for robots, as robots equipped with thorough tactilesensation can more safely interact with their
+                            surroundings, includ-ing with humans. This study describes a recently developed large-scale tactile sensing system for a
+                            robotic link, called TacLINK,which can be assembled to form a whole-body tactile sensing robotarm. The proposed system
+                            is an elongated structure consistingof a rigid transparent bone covered by continuous artificial softskin. This soft
+                            skin of TacLINK not only provides a pleasantinteractive interface but can also change outer skin morphologyby inflation
+                            at low pressure. Upon contact with the surroundingenvironment, TacLINK perceives tactile information through the3-D
+                            deformation of its skin, resulting from the tracking of anarray of markers on its inner wall by a stereo camera located
+                            atboth ends of the transparent bone. A finite element model wasformulated to describe the relationship between applied
+                            force andthe displacements of markers, allowing detailed tactile informa-tion, such as contact location and force
+                            distribution, to be derivedsimultaneously, regardless of the number of contacts. TacLINKis scalable in size, durable in
+                            operation, and low in cost, as wellas being a high performance system, characteristics that can beexploited in the
+                            design of interactive robotic arms, prostheticarms, and service robots. This study describes the design of theTacLINK,
+                            as well as its modeling, implementation and evaluation,with the results suggesting that similar tactile sensing systems
+                            canbe widely applied in robot</p>
+                            <div class="flex justify-center">
+                                <div class="image-viewWidth">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uvDtyXpf2HU?si=YNs0o3bkYdSM5oEY"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        
+                            <div class="flex justify-center mt-5">
+                                <div class="image-viewWidth">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nWlMdr41lYU?si=cgi8pd9fqbdi64jd"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        
+                            <ul class="list-disc text-justify mt-5">
+                                <li>Lac Van Duong Van Anh Ho, <a href="https://ieeexplore.ieee.org/document/9247533" class="paperlink">Large-Scale Vision-Based Tactile Sensing for Robot Links: Design, Modeling, and Evaluation</a>,
+                                submitted to TRO. </li>
+                                <li>Lac Duong, Rei Asahina, Jia Wang Van Anh Ho, <a href="https://ieeexplore.ieee.org/abstract/document/8722814" class="paperlink">Development of a Vision-Based Soft Tactile Muscularis</a> , in Proc. 2nd IEEE
+                                Int. Conf. Soft Robot. (RoboSoft), Apr. 2019, pp. 343–348</li>
+                            </ul>
+                        
+                        </li>
+
+                        <li>
+                            <p class=" description listproject"> Anguilliform Swimming Performance of an Eel-inspired Soft Robot</p>
+                            <p class="description text-justify mb-4"> We present the preliminary design of a soft robot inspired by the eel which swims by undulating its body in wavelike
+                            motion to generate thrust force. The robot body comprises of a series of soft pneumatic actuators controlled by
+                            Pulse-Width Modulation. A soft actuator was simulated and designed to be of suitable shape to mimic an eel. The robot
+                            eel body, was then, fabricated, incorporating pairs of soft actuators. In fish locomotion analysis, kinematics of the
+                            midline, which describes the path of the spine, is frequently studied to represent the whole body for the purpose of
+                            simplifying analysis. We investigated midline kinematics in a model angulliform swimmer. Typical kinematic parameters of
+                            the robot body during swimming were estimated to examine their change with variation of frequency. A kinematic model of
+                            the robot body was built to estimate the thrust force component. The results revealed good potential to develop our
+                            proposed design with midline robot body kinematic properties similar to those in natural long body fish, with movement
+                            in the robot body able to create thrust force.</p>
+                            <div class="flex justify-center">
+                                <div class="image-viewWidth">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/C5XCXhUNN2s?si=r3ToNuXPHdCPA_p_"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                        
+                            <ul class="list-disc text-justify mt-5">
+                                <li>Dinh Nguyen, Van Anh Ho, <a href="https://ieeexplore.ieee.org/document/9025926" class="paperlink">Kinematic Evaluation of a Series of Soft Actuators in Designing an Eel-inspired Roboteling, and
+                                Evaluation</a> , Proceedings of the 2020 IEEE/SICE International Symposium on System Integration (SII), Honolulu, Hawaii,
+                                USA, January 12-15, 2020, pp. 1288-1293 </li>
+    
+                            </ul>
+                        
+                        </li>
+
+                        <li>
+                            <p class=" description listproject"> Morphological Computation in Tactile Sensing</p>
+                            <p class="description text-justify mb-4"> We proposed an active tactile sensing system that selects sensing modalities based on specific sensing tasks, by
+                            changing its morphology, called <span class="font-bold">Wrin'Tac </span> . This work was inspired by the human finger wet-induced wrinkle, which is
+                            usually observed when one soaks in warm water for a period, and has been indicated as an efficient transformation for
+                            enhancement of gripping stability in a wet environment. We proposed a device which is an integration of actuation
+                            (pneumatic actuator) and sensing elements (strain gauges) inside a thin, multi-layered substrate. Under pressurization,
+                            the morphology of the substrate surface (both geometrical and mechanical characteristics) change with appearance of
+                            wrinkles. Especially, by formation of wrinkles, this device can change its shape so that the posture of embedded sensing
+                            elements (strain gauges) can vary and generate different responses depending on external load conditions. As a result,
+                            this device can actively select its sensing functions depending on specific sensing tasks. First, we created a model to
+                            investigate the dynamic changes in a strain gauges' mechanical response under formation of wrinkles. Then, a prototype
+                            of this sensing device and its fabrication process were proposed to accomplish sensing tasks under vertical indentation
+                            and horizontal sliding action on its surface by using one type of strain gauge. This work is an example of soft
+                            morphological control in tactile sensing, and is expected to open a new avenue to development of tactile sensing
+                            systems. This is also an implementation in a broader idea on <span class="font-bold"> VANmorph</span>, Variable Afferent Network morphology.</p>
+                            <div class="flex justify-center">
+                                <div class="image-viewWidth">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/C5XCXhUNN2s?si=r3ToNuXPHdCPA_p_"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        
+                        
+                            <ul class="list-disc text-justify mt-5">
+                                <li>H. Trinh, Van Anh Ho, and K. Shibuya, <a class="paperlink" href="https://ieeexplore.ieee.org/document/8755469">Theoretical Foundation for Design of Friction-Tunable Soft Finger with Wrinkle's
+                                Morphology  </a>, IEEE Robotics and Automation Letters (RA-L) (accepted) </li>
+                                <li>H. Trinh, Y. Iwamoto, Van Anh Ho, and Koji Shibuya, <a class="paperlink" href="https://www.mdpi.com/1424-8220/19/9/2036">Localization of Sliding Movements Using Soft Tactile Sensing Systems
+                                with Three-axis Accelerometers </a> , Sensors, 2019, Vol. 19, 2036; doi:10.3390/s19092036 </li>
+                                <li>Qiukai Qi, Van Anh Ho, <a class="paperlink" href="https://ieeexplore.ieee.org/document/8638951">Wrinkled Soft Sensor with Variable Afferent Morphology</a> , IEEE Robotics and Automation Letters
+                                (RA-L) (accepted) </li>
+                                <li>Hiep Trinh, Van Anh Ho, and Koji Shibuya, <a class="paperlink" href="https://www.tandfonline.com/doi/full/10.1080/01691864.2018.1525322#abstract">Computational Model for Tactile Sensing System with Wrinkle’s Morphological
+                                Change</a>, Advanced Robotics, Vol. 32, Issue 21, pp. 1135-1150, 2018</li>
+                                <li> Van Anh Ho et al., <a href="https://ieeexplore.ieee.org/document/7955043" class="paperlink">Wrin'Tac: Tactile Sensing System with Wrinkle's Morphological Change </a>, IEEE Transactions on Industrial
+                                Informatics (OPEN ACCESS).</li>
+                            </ul>
+                            
+                        
+                        </li>
+                    </ul>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container py-20 -z-30 ">
+            <div class="flex flex-col items-center">
+                <div class="text-center mb-12 ">
+                    <h1 class="title title-ongoingproject ">Finished Projects </h1>
+                        <ul class="list-decimal text-justify">
+                            <li> <p class=" description listproject"> Mechanics of wet adhesion in soft interaction with patterned
+                                morphology</p>
+                             </li>
+
+                            <p class="description text-justify mb-4"> THuman-in-the-loop task involving soft contact has become common in robotic application, especially in physical
+                            human-robot interaction. In this task, it is required that robot would sense interactions of human by touching or
+                            sliding, as well as assess possibility of touch pattern when human is approaching by proximity sensation. In addition,
+                            it is also essential to fabricate an interface so that human does not feel uncomfortable during long-run physical
+                            interaction with robot. We attempt to fabricate a soft interface (or a robotic skin system) completely constructed from
+                            fabrics and soft materials that can sense both proximity and applied force from human's touch, and especially the
+                            sliding event on its surface. The skin consists of a matrix of sensing elements that is able to cover any curvature in a
+                            robot body. Each sensing element can sense the relative distance of conductive object (or human body) that is
+                            approaching the sensing element's surface, 2x2 contact force distribution when the object makes contact with the sensing
+                            element, and onset of slippage . By exploiting simultaneous measurement of capacitance, each fabric sensing element can
+                            smoothly switch the proximity mode and tactile mode based on position of the object. We also constructed a model that
+                            can predict variation of capacitance measurement of proximity and tactile modes during operation for further analysis.
+                            The methods and results presented in this paper can be extended to construct a larger scale of robotic skin for robot's
+                            body, and act as a platform for study human-robot interaction.</p>
+                            <div class="flex justify-center w-full">
+                                <img src="../img/finishFabricSensor.jpg" alt="HolabImage" class="image-viewWidth image-border">
+                            </div>
+                            <ul class="list-disc">
+                                <li> <p>Van Anh Ho and Shinichi Hirai, <a href="https://ieeexplore.ieee.org/document/7759061" class="paperlink"> Fabric Interface with Proximity and Tactile Sensation for Human-Robot Interaction</a> , 2016
+                                IEEE International Conference on Intelligent Robots and Systems (IROS), pp. 238-245, Daejeon, Korea, Oct. 9 - 14, 2016</p>
+                                </li>
+                            </ul>
+
+                            <li>
+                                <p class=" description listproject"> Grasping by Wrapping</p>
+                            </li>
+                            
+                            <p class="description text-justify mb-4"> We conducted a design and evaluated operation of a non-articulated robotic hand, inspired by the multilayered structure.
+                            The hand is made of a non-stretchable thin film, the two ends of which are attached to a soft substrate, forming an
+                            enclosed wrinkled shape. When the substrate is elongated, the morphology of the hand changes varied, resulting in a
+                            “wrapping” form around the grasped object. This design is applicable to a wide range of objects that can be grasped by
+                            the robotic hand. The smallest and biggest sizes of the grasped object are determined by the morphological computation
+                            of the film during design of the hand. This design also reduces the uncertainty of position between the hand and the
+                            object; i.e., stable grasping can be maintained as long as the object fits within the enclosed form of the hand. A
+                            mechanism controlling the morphology of the film using only one actuator, and for grasping food products such as fruits,
+                            is proposed. Preliminary results show the potential of the hand's morphology in the design of soft robotic mechanisms.</p>
+                            <div class="flex justify-center w-full">
+                                <img src="../img/finishGrasping.jpg" alt="HolabImage" class="image-viewWidth image-border">
+                            </div>
+                            <ul class="list-disc">
+                                <li>
+                                    <p>Van Anh Ho, <a href="https://ieeexplore.ieee.org/document/8206498" class="paperlink"> Grasping by wrapping: Mechanical design and evaluation </a>, 2017 IEEE International Conference on Intelligent
+                                    Robots and Systems (IROS), pp. 6013-6019, Vancouver, Canada, Oct. 2017</p>
+                                </li>
+                            </ul>
+
+
+                            <li>
+                                <p class=" description listproject"> Design and Analysis of a Soft-Fingered Hand with Contact Feedback</p>
+                            </li>
+                            
+                            <p class="description text-justify mb-4"> We proposed a novel approach to the fabrication of a soft robotic gripper/hand with contact feedback for grasping
+                            delicate objects. Each finger has a multilayered structure, consisting of a main structure and sensing elements. The
+                            main structure includes a softer layer much thicker than a stiffer layer. The gripping energy of the fingers is
+                            generated from the elastic energy of the pre-stretched softer layers, and controlled by simple tendon strings
+                            pulled/released by a single actuation. Due to the pre-stretching and the difference in moduli among layers, the
+                            shape/posture of the fingers in stable state is similar to that of soft fingers actuated by pressurization. Then, we
+                            were able to design a soft-fingered hand for different applications by changing the morphological shape of layers. In
+                            addition, the hand includes a soft, flexible, and stretchable sensing element for the detection of contact and applied
+                            force, which can also be used in other designs of soft fingers. We assessed the ability of the proposed soft hand to
+                            grasp food products with feedback of contact location. The experimental results showed that the proposed hand could
+                            safely grasp light and delicate objects, such as fruits, and that it could possibly distinguish among objects based on
+                            feedback from sensors. The design proposed in this paper may give rise to other soft hand designs, along with the
+                            possibility of using morphological imbalanced deformation of multilayered structures in soft robotics research.</p>
+                            <div class="flex justify-center w-full">
+                                <img src="../img/finishSoftFinger1.jpg" alt="HolabImage" class="image-viewWidth image-border">
+                            </div>
+                            <div class="flex justify-center w-full mt-5">
+                                <img src="../img/finishSoftFinger2.jpg" alt="HolabImage" class="image-viewWidth image-border">
+                            </div>
+                            <ul class="list-disc">
+                                <li>
+                                    <p>Van Anh Ho and Shinichi Hirai, <a href="https://ieeexplore.ieee.org/document/7797194" class="paperlink">Design and Analysis of a Soft-Fingered Hand with Contact Feedback</a>, IEEE Robotics and
+                                    Automation Letters (RA-L), Vol 2, Issue 2, pp. 491-498, April, 2017.</p>
+                                </li>
+                            </ul>
+
+                        <li>
+                            <p class=" description listproject mt-4">Haptic Displays based on Localized Displacement Phenomenon</p>
+                        </li>
+                        
+                        <p class="description text-justify mb-4">Human-in-the-loop task involving soft contact has become common in robotic manipulation research, especially in
+                        tele-operation and robotic surgery. Soft contact in this task may include a soft-fingered robot hand gripping a rock, or
+                        robotic control of forceps to pick up a tissue sample. In these scenarios, operators normally struggle with controlling
+                        the gripping force of the remote robotic hand, so that the grasped object is neither dropped nor damaged. Information
+                        about slippage, especially incipient slippage (or pre-slide), occurring at the contact surface is not properly sensed by
+                        the operator through cutaneous tactile feedback. This study aimed to generate pre-slide sensation on human fingertip for
+                        enhancement of slip perception of soft objects. We hypothesized that use of a method that can reproduce localized
+                        slippage can enhance human perception of slippage based on our previous study of soft-based contact. We created a
+                        grounded slip haptic display device, which can efficiently assess partial slippage on a human fingertip efficiently
+                        using a bundle of pins under only one actuation. This paper focuses on the creation of the device, including its
+                        theoretical underpinnings and design process, as well as assessing its efficiency in enhancing skin stretching through
+                        static and dynamic simulations. The device can be utilized to assess the slide process of a human fingertip, perceiving
+                        how and when slippage occurs on the contact surface; and can act as a platform for studies</p>
+                        <div class="flex justify-center w-full">
+                            <img src="../img/finishHaptic.jpg" alt="HolabImage" class="image-viewWidth image-border">
+                        </div>
+                        
+                        <ul class="list-disc">
+                            <li>
+                                <p>Van Anh Ho, H. Honda, and Shinichi Hirai, <a class="paperlink" href="https://ieeexplore.ieee.org/document/7396949?arnumber=7396949&abstractAccess=no&userType=inst9">Development of a Novel Slip Haptic Display Device Based on the Localized
+                                Displacement Phenomenon</a> , IEEE Robotics and Automation Letters (RA-L), Vol. 1. Issue 1, pp. 585-592, Feb., 2016.</p>
+                            </li>
+                        </ul>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footercontainer z-50">
+        <div class="flex sm:flex-row overflow-hidden">
+            <div class="flex flex-row-2 md:w-1/2 footerleft p-5">
+                <div class="  footerleft description">
+                    <h4 class=" text-left description">Soft Haptics Lab.</h4>
+                    <a href="./publications.html"
+                        class="hover:text-text-color-secondary ease-in duration-200 capitalize text-left description">School
+                        of Materials Science.</a>
+                    <h1 class=" text-left">
+                        Japan Advanced Institute of Science and Technology (JAIST)
+                    </h1>
+                    <div class="flex justify-center">
+                        <img class="w-32 -p-5 mt-5" src="../img/jaistlogo.jpg" alt="Lab Image">
+                    </div>
+                    <h1 class="text-center description mt-5">Copyright © Cis-trans, Inc. All rights reserved.</h1>
+                </div>
+            </div>
+            <div class=" md:w-1/2 footereight">
+    
+                <div class="flex flex-col-2 mt-5">
+                    <div class="w-1/2 ml-10  mx-auto flex flex-col description">
+                        <a href="./index.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize">Home</a>
+                        <a href="./research.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize">Research</a>
+                        <a href="./publications.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize">Publications</a>
+                        <a href="./member.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize">Members</a>
+                    </div>
+                    <div class="w-1/2 ">
+    
+                        <div class="flex flex-col-2">
+                            <div class="w-3/4">
+                                <p class="mb-4 description"> Follow Us</p>
+                                <div class="flex items-center space-x-6">
+                                    <a href="#" target="_blank" aria-label="Facebook" class="sc-dVdSBb hAjxSo"><svg
+                                            width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.5">
+                                                <path
+                                                    d="M12.2109 21C17.1815 21 21.2109 16.9705 21.2109 12C21.2109 7.02943 17.1815 3 12.2109 3C7.24037 3 3.21094 7.02943 3.21094 12C3.21094 16.9705 7.24037 21 12.2109 21Z"
+                                                    stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M15.961 8.24807H14.461C14.1651 8.24683 13.872 8.30418 13.5985 8.41681C13.3249 8.52944 13.0764 8.69513 12.8672 8.90431C12.658 9.11349 12.4923 9.36202 12.3797 9.63556C12.2671 9.9091 12.2097 10.2022 12.211 10.4981V20.998"
+                                                    stroke-width="1.5" stroke="white" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M9.21094 13.5H15.2109" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke="white">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                    <a href="#" target="_blank" aria-label="Twitter" class="sc-dVdSBb hAjxSo"><svg
+                                            width="20" height="19" viewBox="0 0 1200 1227" fill="#fff"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.5"
+                                                d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" target="_blank" aria-label="YouTube" class="sc-dVdSBb hAjxSo"><svg
+                                            width="28" height="27" viewBox="0 0 24 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.5">
+                                                <path d="M15 10.6854L10.5 8.08008V13.2908L15 10.6854Z" stroke="white"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                                <path
+                                                    d="M2.25 10.684C2.25 13.1103 2.54062 14.5269 2.75625 15.2597C2.81571 15.4585 2.92813 15.6424 3.08447 15.7966C3.2408 15.9507 3.43666 16.0708 3.65625 16.1471C6.79688 17.1893 12 17.1649 12 17.1649C12 17.1649 17.2031 17.1893 20.3438 16.1471C20.5633 16.0708 20.7592 15.9507 20.9155 15.7966C21.0719 15.6424 21.1843 15.4585 21.2438 15.2597C21.4594 14.5269 21.75 13.1103 21.75 10.684C21.75 8.25777 21.4594 6.84111 21.2438 6.10835C21.1843 5.90953 21.0719 5.72562 20.9155 5.57147C20.7592 5.41732 20.5633 5.29723 20.3438 5.22089C17.2031 4.17875 12 4.20317 12 4.20317C12 4.20317 6.79688 4.17875 3.65625 5.22089C3.43666 5.29723 3.2408 5.41732 3.08447 5.57147C2.92813 5.72562 2.81571 5.90953 2.75625 6.10835C2.54062 6.84111 2.25 8.25777 2.25 10.684Z"
+                                                    stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-1/4">
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                            </div>
+                        </div>
+    
+    
+    
+                    </div>
+    
+                </div>
+    
+    
+                <div class="text-left description mx-auto w-3/4 mt-5">
+                    <p> Address: 1-1 Asahi-dai, Nomi, Ishikawa, 923-1292 Japan</p>
+                    <p> TEL: +81-761-51-1584 </p>
+                    <p> FAX: +81-761-51-1149</p>
+                    <p class="mb-10"> E-mail: van-ho@jaist.ac.jp </p>
+    
+                    <!-- Hide this section on larger screens, show on small screens -->
+                    <div class="jaistinfor description hidden sm:hidden block">
+                        <h4 class="text-left description">Soft Haptics Lab.</h4>
+                        <a href="./publications.html"
+                            class="hover:text-text-color-secondary ease-in duration-200 capitalize text-left description">School
+                            of
+                            Materials Science.</a>
+                        <h1 class="text-left">Japan Advanced Institute of Science and Technology (JAIST)</h1>
+                        <div class="flex justify-center">
+                            <img class="w-32 -p-5 mt-5" src="../img/jaistlogo.jpg" alt="Lab Image">
+                        </div>
+                        <h1 class="text-center description mt-5">Copyright © Cis-trans, Inc. All rights reserved.</h1>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+    </footer>
+    <script>
+        // Mobile menu
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hlink = document.querySelector('#hlink');
+        const faSolid = document.querySelector(".fa-solid");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+
+        hlink.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark');
+
+            })
+
+        })
+    </script>
+    <script src="changeLanguage.js"></script>
+    <script src="gallery.js"></script>
+    <!-- <script src="menuLoader.js"></script> -->
+
+
+</body>
+
+</html>

@@ -709,10 +709,6 @@ video {
   width: 25%;
 }
 
-.w-2\/5 {
-  width: 40%;
-}
-
 .w-20 {
   width: 5rem;
 }
@@ -856,16 +852,8 @@ video {
   text-align: center;
 }
 
-.text-right {
-  text-align: right;
-}
-
 .text-justify {
   text-align: justify;
-}
-
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-3xl {
@@ -885,17 +873,16 @@ video {
   text-transform: capitalize;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .leading-relaxed {
   line-height: 1.625;
 }
 
 .tracking-wider {
   letter-spacing: 0.05em;
-}
-
-.text-blue-700 {
-  --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 
 .text-blue-800 {
@@ -1174,7 +1161,6 @@ video {
 
 .logo-round {
   max-width: 360px;
-  border-radius: 9999px;
 }
 
 @media (min-width: 1561px) {
@@ -1629,58 +1615,148 @@ video {
   margin-top: auto;
 }
 
-.text-contain-wrap {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  /* Text takes the remaining space, image takes auto width */
-  grid-gap: 20px;
-  /* Space between the text and the image */
-  align-items: start;
-  /* Align image to the top */
+.gradient-background {
+  background: #FFF4E6;
+  color: black;
+  /* Text contrast for gradient */
+  padding: 20px;
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add subtle shadow */
+  text-align: center;
 }
 
-.image img {
-  max-width: 150px;
-  /* Set the image width as needed */
+/* lab director */
+
+/* Lab Director Section */
+
+.lab-director-section .container {
+  background: #FFF4E6;
+  width: 100%;
+  max-width: 1000px;
+  /* background: white; */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.lab-director-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* .director-photo {
+  flex: 1;
+  max-width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.director-photo {
+  flex: 1;
+  max-width: 270px;
+  /* Constrain width */
   height: auto;
-  /* Maintain aspect ratio */
+  /* Maintain the correct aspect ratio */
+  border-radius: 10px;
+  /* Rounded corners for elegance */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add subtle shadow */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* Ensures the image doesn't stretch */
 }
 
-.text {
-  line-height: 1.5;
-  /* Adjust line spacing for text readability */
+.director-details {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* --------------------- On going project --------------------------- */
-
-.imageongoing{
-  float: left;
-  margin: 5px 5px;
-  border-radius: 5px;
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a2e66;
+  /* Dark Blue for professionalism */
+  margin-bottom: 15px;
 }
 
-.imageongoing img{
-  max-width: 20vw;
+.director-message {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 30px;
 }
 
-/* Paper Link-------------------------------- */
-
-.paperlink {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
-  text-decoration-line: underline;
-  text-underline-offset: 2px;
+/* .director-message::before {
+  content: "“";
+  font-size: 2.5rem;
+  color: #1a2e66;
+  position: absolute;
+  left: 0;
+  top: -10px;
 }
 
-.line {
-  height: 2px;
-  /* Line thickness */
-  background-color: #0890ff;
-  /* Line color */
-  width: 60%;
-  /* Adjust width as needed */
-  margin: 20px auto;
-  /* Center the line and adjust spacing */
+.director-message::after {
+  content: "”";
+  font-size: 2.5rem;
+  color: #1a2e66;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+} */
+
+.director-info {
+  margin-top: 15px;
+}
+
+.director-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a2e66;
+}
+
+.director-role {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.director-email {
+  font-size: 1rem;
+  color: #0070c9;
+  text-decoration: none;
+}
+
+.director-email:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .lab-director-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .director-details {
+    align-items: center;
+  }
+
+  .director-message {
+    padding-left: 15px;
+  }
 }
 
 .hover\:text-text-color-secondary:hover {
@@ -1705,10 +1781,6 @@ video {
 
   .md\:w-2\/3 {
     width: 66.666667%;
-  }
-
-  .md\:w-3\/5 {
-    width: 60%;
   }
 
   .md\:flex-row {
@@ -1737,3 +1809,7 @@ video {
     display: none;
   }
 }
+
+
+
+
