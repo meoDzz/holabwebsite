@@ -9,21 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="hamburger.js" defer></script>
 </head>
 
 <body class="bg-color-primary text-color-white tracking-wider mx-auto">
 
     <header>
-        <nav class="container bg-color-primary flex justify-between items-center">
-            <!-- <div class="w-20 py-5 text-text-color-secondary font-bold text-3xl flex-row">
-                <a href="#home">
-                    <span class="text-color-white"> Soft Haptics</span>Lab.
-                </a>
-                <div class="flex justify-center">
-                    <img class="w-32 h-32" src="../img/jaistlogo.jpg" alt="Lab Image">
-                </div>
-            </div> -->
-            <div class="w-20 py-5 text-text-color-secondary font-bold text-3xl flex items-center">
+        <nav class="container bg-stone-100 flex justify-between items-center">
+            <div class="w-20 text-text-color-secondary font-bold text-3xl flex items-center">
                 <a href="#home" class="mr-4">
                     <span class="text-color-white "> Soft Haptics</span>Lab.
                 </a>
@@ -33,10 +26,13 @@
                     <li><a href="./index.html"
                             class="hover:text-text-color-secondary ease-in duration-200 capitalize description">Home</a>
                     </li>
+                    <li><a href="./news.html"
+                        class="hover:text-text-color-secondary ease-in duration-200 capitalize description">News</a></li>
                     <li><a href="./research.html"
                             class="hover:text-text-color-secondary ease-in duration-200 capitalize description">Research</a></li>
                     <li><a href="./member.html"
                             class="hover:text-text-color-secondary ease-in duration-200 capitalize description">Members</a></li>
+
                     <li><a href="./publications.html"
                             class="hover:text-text-color-secondary ease-in duration-200 capitalize description">Publications</a>
                     </li>
@@ -51,16 +47,18 @@
                 </ul>
             </div>
 
-            <!-- mobile-screen -->
+
 
             <div id="hamburger" class="lg:hidden cursor-pointer z-50">
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div id="menu" class=" hidden bg-white h-[100vh] absolute inset-0">
-                <ul class=" h-full grid place-items-center py-20">
+                <ul class=" h-full grid place-items-center py-20" >
                     <li><a id="hlink" href="./index.html"
                             class="hover:text-text-color-secondary ease-in duration-200 description">Home</a>
                     </li>
+                    <li><a href="./news.html"
+                        class="hover:text-text-color-secondary ease-in duration-200 capitalize description">News</a></li>
                     <li><a id="hlink" href="./research.html"
                             class="hover:text-text-color-secondary ease-in duration-200 description">Research</a></li>
                     <li><a id="hlink" href="./member.html"
@@ -71,9 +69,27 @@
                     <li><a id="hlink" href="./access.html"
                         class="hover:text-text-color-secondary ease-in duration-200 description">Access</a>
                     </li>
+                    
                 </ul>
             </div>
-        </nav>
+        </nav> 
+        <!-- <nav class="navbar">
+            <div class="logo">Soft Haptics Lab</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav> -->
+
+
     </header>
 
     <main>
@@ -84,14 +100,14 @@
                 <a href="#" language='japanese'> JP</a>
             </div>
         </div>
-        <div class=" flex justify-center">
+        <!-- <div class=" flex justify-center">
             <img class="-z-30 imageResearchTheme" src="../img/holabresearchmain.jpg" alt="Lab Image">
-        </div>
+        </div> -->
        
         <div class="container py-11 -z-30 ">
-            <div class="flex flex-col items-center md:flex-row ">
-                <div class="text-center md:text-left md:w-1/2 md:pr-10">
-                    <h1 class="title title-aboutus ">About Us </h1>
+            <div class="flex flex-col items-center ">
+                <div class="text-center md:text-left md:pr-10">
+                    <h1 class="title title-aboutus ">Welcome to Soft Haptics Lab ! </h1>
                     <p class=" description description-aboutus leading-relaxed mb-10 text-justify mt-10"> Our Laboratory
                         aims
                         to answer emerging needs of the society by proposals of novel robotic systems, ranging from
@@ -104,11 +120,10 @@
                         systems with specific applications. Results obtained in this process could be inversely utilized
                         to understand the
                         natures.</p>
-                    
                 </div>
 
-                <div class="flex justify-center w-full md:w-1/2">
-                    <img src="../img-resize/farewellParty2024.jpg" alt="HolabImage" class="image-viewWidth image-border">
+                <div class="flex justify-center w-10/12">
+                    <img src="../img/holabresearchmain.jpg" alt="HolabResearch" class=" image-border">
                 </div>
             </div>
 
@@ -119,16 +134,83 @@
 
             </div>        -->
         </div>
+                
+            <!-- Key Features Section -->
+            <section class="features">
+                <div class="container">
+                    <h2 class="title title-aboutus fade-in">Explore Our Lab </h2>
 
-        
-
+                    <div class="feature-grid">
+                        <!-- Feature 1 -->
+                        <div class="flex justify-center items-center">
+                            <a href="./research.html" class="feature fade-in ">
+                                <div class="flex justify-center ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="black" width="40" height="40">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 18a7 7 0 110-14 7 7 0 010 14z" />
+                                        </svg>
+                                </div>
+                                
+                                    
+                                <h3 class="title2" >Research</h3>
+                                <p>Advanced tactile sensing systems with soft material.</p>
+                            </a>
+                        </div>
+                        
+                        <!-- Feature 2 -->
+                        <a href="./member.html" class="feature fade-in">
+                            <div class="flex justify-center ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="black" width="64" height="64">
+                                    <!-- Left Person -->
+                                    <circle cx="16" cy="20" r="8" stroke-width="2" />
+                                    <path d="M4 36c0-6 7-11 12-11h4c2 0 12 5 12 11v4H4v-4z" stroke-width="2" />
+                                    <!-- Center Person -->
+                                    <circle cx="32" cy="16" r="10" stroke-width="2" />
+                                    <path d="M18 38c0-8 8-14 14-14h8c6 0 14 6 14 14v6H18v-6z" stroke-width="2" />
+                                    <!-- Right Person -->
+                                    <circle cx="48" cy="20" r="8" stroke-width="2" />
+                                    <path d="M36 36c0-6 7-11 12-11h4c5 0 12 5 12 11v4H36v-4z" stroke-width="2" />
+                                </svg>
+                                
+                            </div>
+                            
+                              
+                              
+                            <h3 class="title2">Members</h3>
+                            <p>Meet our great team</p>
+                        </a>
+                        <!-- Feature 3 -->
+                        <a href="./publications.html" class="feature fade-in">
+                            <div class="flex justify-center ">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none" stroke="black" stroke-width="2">
+                                    <!-- Paper Outline -->
+                                    <rect x="12" y="8" width="40" height="48" rx="4" ry="4" />
+                                    <!-- Folded Corner -->
+                                    <path d="M40 8v12h12" />
+                                    <!-- Lines of Text -->
+                                    <line x1="18" y1="20" x2="34" y2="20" stroke-linecap="round" />
+                                    <line x1="18" y1="28" x2="46" y2="28" stroke-linecap="round" />
+                                    <line x1="18" y1="36" x2="46" y2="36" stroke-linecap="round" />
+                                    <line x1="18" y1="44" x2="34" y2="44" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            
+                            
+                              
+                            <h3 class="title2">Publications</h3>
+                            <p>The outcome of research</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            
         <div class="lab-director-section container py-20 -z-60">
             <div class="container">
                 <div class="lab-director-card">
-                    <img src="../img/ThayVan.jpg" alt="Lab Director" class="director-photo">
+                    <img src="../img/ThayVan.jpg" alt="Lab Director" class="director-photo fade-in">
                     <div class="director-details">
-                        <h2 class="section-title">Lab Director</h2>
-                        <blockquote class="description italic text-justify">
+                        <h2 class="section-title fade-in">Lab Director</h2>
+                        <blockquote class="description italic text-justify fade-in">
                             <p>
                                 Robotics is a multi-disciplinary research field. Our lab welcomes students from diverse 
                                 backgrounds such as material science, mechanical engineering, sensor fabrication, control 
@@ -137,7 +219,7 @@
                                 Feel free to contact our staff for further information.
                             </p>
                         </blockquote>
-                        <div class="director-info">
+                        <div class="director-info fade-in">
                             <h3 class="director-name">Professor HO, Van Anh</h3>
                             <p class="director-role">JST Presto Researcher, IEEE Senior Member</p>
                             <a href="mailto:van-ho@jaist.ac.jp" class="director-email">van-ho@jaist.ac.jp</a>
@@ -148,11 +230,10 @@
         </div>
 
 
-        <div class="container py-20 -z-30 justify-center overflow-hidden gradient-background">
+        <!-- <div class="container py-20 -z-30 justify-center overflow-hidden gradient-background">
             <h1 class="title text-center">Lab Activities</h1>
             <div class="gallery">
                 <div class="gallery-container">
-                    <!-- <img class="gallery-item gallery-item-1" src="../img/ThayVan.jpg" data-index="1"> -->
                     <div class="gallery-item gallery-item-1" data-index="1">
                         <img src="../img-resize/2022aDinhNhan.jpg" >
                         <p class="description text-center">Graduation Dr. Nguyen Quang Dinh & Dr. Nguyen Huu Nhan</p>
@@ -191,333 +272,8 @@
                 <div class="gallery-controls overflow-hidden">
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="container py-20 -z-60">
-            <h1 class="title text-center">News</h1>
-            <div class="flex flex-col items-center ">
-                <div class=" pl-10 ">
-                    <div class="flex flex-col items-start ">
-                        <ul class="list-disc text-justify">
-                            <p class="description listproject -translate-x-10"> 2024</p>
-                            <li>
-                                <p class="description"> <span class="font-bold"> 2024/09/25</span>  Two PhD students: Le Dinh Minh Nhat and Luu Khanh Quan,  graduated from Soft Haptics Lab.  Well done, and wish for your success!</p>
-                                <div class="flex justify-center w-full">
-                                    <img src="../img/graduation2024QuanNhat.JPG" alt="HolabImage" class="image-viewWidth image-border">
-                                </div>
-                            </li>
-                            <p class="description listproject -translate-x-10"> 2023</p>
-                            <li>
-                                <p class=" description"> <span class="text-red-600 font-bold">HOT</span> Our paper <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10054516" class=" paperlink">Simulation, Learning, and Application of Vision-Based Tactile Sensing at Large Scale </a>
-                                has been accepted by IEEE Transactions on Robotics. (PDF/Open Access).</p>
-                            </li>
-                            <div class="flex justify-center">
-                                <div class="image-viewWidth">
-                                    <iframe width="660" height="335"
-                                        src="https://www.youtube.com/embed/NN2u8YBLITY?si=Y1jY9BZY2mcvAgXH"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            
-
-
-                            <li>
-                                <p class="description"> <span class="font-bold"> 2023/03/28</span>  One PhD student: Son Bui, and seven Master
-                                    students graduated from Soft Haptics Lab. Two of them received Outstanding Graduation
-                                    Awards.  Well done, and wish for your success!</p>
-                                <div class="flex justify-center w-full">
-                                    <img src="../img/graduation2023.jpeg" alt="HolabImage" class="image-viewWidth image-border">
-                                </div>
-                            </li>
-
-
-
-                            <p class="description listproject -translate-x-10"> 2022</p>
-                            <li>
-                                <p class="description"><span class="text-red-600 font-bold">HOT</span> Our paper <a href="https://ieeexplore.ieee.org/document/9868241" class=" paperlink">Tombo Propeller: Bioinspired Deformable Structure Toward Collision-Accommodated Control for Drones</a> has been
-                                accepted by IEEE Transactions on Robotics. (PDF) .</p>
-                            </li>
-                            <div class="flex justify-center">
-                                <div class="image-viewWidth">
-                                    <iframe width="660" height="335" src="https://www.youtube.com/embed/zjHvukgfJwc?si=AG8mpPvFMTsoz2GN"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            
-                            
-
-                            <li>
-                                <p class="description"><span class="font-bold">2022/04/1 </span> Professor Ho has been verified as <span class="font-bold">IEEE Senior Member</span>.</p>
-                            </li>
-    
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2022/03/24</span> Two PhD students: Dinh Nguyen and Nhan Nguyen
-                                    successfully obtained the PhD degress. Well done, and wish for
-                                    your success!</p>
-                                <div class="flex justify-center w-full">
-                                    <img src="../img/2022aDinhNhan.jpg" alt="HolabImage" class="image-viewWidth image-border">
-                                </div>
-                            </li>
-
-                            <p class="description listproject -translate-x-10"> 2021</p>
-                            <li>
-                                <p class="description"><span class="font-bold"> 2021/03/24</span>  Seven Master students: Nakamura, Nakayama, Ishikawa, Inoue, Suzuki, Mori, and Zhou graduated from Soft
-                                Haptics Lab. Well done, and wish for your success!
-                                    your success!</p>
-                                <div class="flex justify-center w-full">
-                                    <img src="../img/grad2020.jfif" alt="HolabImage" class="image-viewWidth image-border">
-                                </div>
-                            </li>
-
-                            <li>
-                                <p class=" description"> <span class="text-red-600 font-bold">HOT</span> Journal paper titled <a
-                                        href="https://ieeexplore.ieee.org/document/9247533" class=" paperlink">Large-Scale Vision-Based Tactile Sensing for Robot Links: Design, Modeling, and Evaluation </a>
-                                    has been accepted by IEEE Transactions on Robotics (T-RO).</p>
-                            </li>
-
-                            <li>
-                                <p class=" description"> <span class="text-red-600 font-bold">HOT</span> Journal paper titled <a
-                                        href="https://home.liebertpub.com/publications/soft-robotics/616/overview" class=" paperlink">Mechanics and Morphological Compensation Strategy for Trimmed Soft Whisker Sensor </a>
-                                    has been accepted by Soft Robotics (journal).</p>
-                            </li>
-                            <p class="description listproject -translate-x-10"> 2020</p>
-                            <li>
-                                <p class="description"><span class="font-bold">2020/10/01 </span>Deformable Propellers for Tangible Drones is now exhibited at JST Innovation Japan 2020 online. <a
-                                        class="paperlink" href="https://ij2020online.jst.go.jp/exhibitor/un20200372.html?fi=jst08">Visit our booth</a>.</p>
-                            </li>
-                            <li>
-                                <p class="description"><span class="font-bold">2020/08/31 </span>Project on Deformable Propeller for Drones has been accepted by JST/SCORE (Team Promotion Type) . Check out the
-                                promotion video for the project. <a class="paperlink"
-                                        href="https://www.youtube.com/watch?v=diTp2mfwjRI&t=8s">Here</a>.</p>
-                            </li>
-
-                            <li>
-                                <p class=" description"> <span class="font-bold">2020/07/22 </span> Our paper <a
-                                        href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9044791" class=" paperlink">Wrinkled Soft Sensor with Variable Afferent Morphology: Case of Bending Actuation</a>
-                                    is Best Paper Award's Finalist of <a href="http://robosoft2020.org/" class=" paperlink"> 2020 IEEE International Conference on Soft Robotics. </a>.</p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold">2020/04</span>PhD student Nguyen Van Pho received IEEE Nagoya Chapter's award for presentation at international conference (ICRA 2019) <a class="paperlink"
-                                        href="https://www.jaist.ac.jp/whatsnew/award/2020/04/22-1.html">Details!</a>.</p>
-                            </li>
-
-                            <li>
-                            <p class="description"><span class="font-bold">2020/04/01</span>Our lab's PhD students Nguyen Van Pho and Qi Qiukai are awarded Japan Society for Promotion of Science (JSPS)<a class="paperlink"
-                                    href="https://www.jsps.go.jp/english/e-pd/index.html">Research Fellowship for Young Scientist (DC)</a>. Congratulations!.</p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold">2020/04/01</span>Our lab's PhD student Nguyen Quang Dinh is awarded abroad visiting-scholar grant from <a class="paperlink"
-                                        href="https://www.jsps.go.jp/english/e-pd/index.html">Tateishi</a>.
-                                    Congratulations!.</p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold">2020/03/25</span>Journal paper titled <a class="paperlink"
-                                        href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9044791">Wrinkled Soft Sensor with Variable Afferent Morphology: Case of Bending Actuation</a>.
-                                    has been accepted by IEEE Robotics and Automation Letters (RA-L) and will also be presented at <a class="paperlink" href="http://robosoft2020.org/"> RoboSoft 2020</a>.</p>
-                            </li>
-
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2020/03/25</span> Four Master students: Koshimoto, Miura, Yoshigi, and Wang graduated from Soft Haptics Lab. Well done, and wish for your
-                                success!.</p>
-                                <div class="flex justify-center w-full">
-                                    <img src="../img/class2018.jfif" alt="HolabImage" class="image-viewWidth image-border">
-                                </div>
-                            </li>
-
-
-
-                            <p class="description listproject -translate-x-10"> 2019</p>
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/11/09</span> Lab director Van Anh Ho is Winner of IEEE Nagoya Section Young Researcher Awards 2019.</p>
-
-                            </li>
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/10/31</span> Two papers, one of them on "Kinematic Evaluation of a Series of Soft Actuators in Designing an Eel-Inspired Robot" by
-                                our PhD student Dinh Nguyen, have been accepted by 2020 IEEE/SICE International Symposium on System Integration <a href="https://www.icra2019.org/" class="paperlink">(SII2020) </a>, Hawaii, USA.</p>
-
-                            </li>
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/09/05</span> Presented demonstration on soft tactile muscularis at Innovation Japan 2019. 
-                                It was also reported by <a href="https://eetimes.itmedia.co.jp/ee/articles/1909/05/news039_4.html" class="paperlink" >EE Times Japan</a>.</p>
-
-                            </li>
-                            
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/07/05</span> Journal paper titled <a href="https://ieeexplore.ieee.org/document/8755469"
-                                        class="paperlink">Theoretical Foundation for Design of Friction-Tunable Soft Finger with Wrinkle's Morphology</a>. has been accepted by IEEE Robotics and Automation Letters (RA-L) and will also be presented at
-                                    <a href="https://iros2019.org/" class="paperlink">IROS2019</a>.
-                                 </p>
-                            
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/05/14</span> Journal paper titled <a
-                                        href="https://www.mdpi.com/1424-8220/19/9/2036" class="paperlink">Localization of Sliding Movements Using Soft Tactile Sensing Systems with Three-axis
-                                        Accelerometers</a>. has been accepted by Sensors.
-                                </p>
-
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/04/16</span> Demonstrated new design of<a
-                                        href="https://ieeexplore.ieee.org/document/8755469" class="paperlink">Vision based soft tactile muscularis</a>. at IEEE International Conference on Soft Robotics (RoboSoft2019) in Seoul
-                                    <a href="https://ieeexplore.ieee.org/document/8722814" class="paperlink">(see related paper)</a>.
-                                </p>
-
-                            </li>
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/04/01</span> Home page for ICRA 2019 Wokshop on <a
-                                        href="https://www.ieee-ras.org/publications/ra-l/special-issues/past-special-issues/soft-haptic-interaction-modeling-design-and-application" class="paperlink">Soft Haptic Interaction: Modeling, Design And Application</a> has been released by Hongbin. The workshop day is May 24
-                                </p>
-
-                            </li>
- 
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/04/01</span> Welcome new 5 Master students and 1 PhD student to our
-                                    laboratory!.
-                                </p>
-                                <div class="flex justify-center w-full">
-                                    <img src="../img/grad_2018.jfif" alt="HolabImage" class="image-viewWidth image-border">
-                                </div>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/03/22</span> Two Master students, Kindaichi and Asahina, graduated from Soft Haptics Lab. Well done, and wish for your success!.
-                                </p>
-                            </li>
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/02/12</span> Journal paper titled <a href="https://ieeexplore.ieee.org/document/8638951" > Wrinkled Soft Sensor with Variable Afferent Morphology </a> has been accepted by IEEE Robotics and
-                                Automation Letters (RA-L).
-                                </p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/01/29</span> Two papers by Pho Nguyen and Qiukai Qi have been accepted by 2019 IEEE International Conference on Robotics and
-                                Automation (ICRA 2019), Montreal, Canada.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/01/21</span> Two papers have been accepted by 2019 IEEE International Conference on Soft Robotics <a href="https://robosoft2019.org/" class="paperlink"> (RoboSoft 2019)</a>, Seoul, Korea.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2019/01/18</span> Journal paper titled <a href="https://ieeexplore.ieee.org/document/8613791" class="paperlink"> Grasping Interface with Wet Adhesion and Patterned Morphology: Case of Thin Shell </a>, has been accepted by IEEE Robotics and Automation Letters (RA-L).
-                                </p>
-                            </li>
-
-
-                            <p class="description listproject -translate-x-10"> 2018</p>
-                            <li>
-                                <p class="description"><span class="font-bold"> 2018/10/25</span> Journal paper titled <a
-                                        href="https://iopscience.iop.org/article/10.1088/1748-3190/aaeb09" class="paperlink"> Mechanics of wet adhesion in soft interaction with patterned morphology </a>, has been accepted by Bioinspiration & Biomimetics.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2018/09/09</span> Journal paper titled <a
-                                        href="https://www.tandfonline.com/doi/full/10.1080/01691864.2018.1525322" class="paperlink"> Computational Model for Tactile Sensing System with Wrinkle’s Morphological Change</a>, has been accepted by Advanced Robotics.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2018/08/20</span> We are organizing a Special Issue on RA-L (IEEE Robotics and Automation Letters) with ICRA 2019 option,titled Soft Haptic Interaction: Modeling, Design, and Application.
-                                    Robotics.
-                                </p>
-                            </li>
-                            <li>
-                                <p class="description"><span class="font-bold"> 2018/06/29</span> One paper on haptic display device has been accepted by 2018 IEEE International Conference on Intelligent Robots and
-                                Systems (IROS 2018), Madrid, Spain.
-                                </p>
-                            </li>
-
-
-                            <li>
-                                <p class="description"><span class="font-bold">2018/04/01</span> Proposal for <a
-                                        href="https://www.jsps.go.jp/english/e-grants/index.html" class="paperlink">KAKENHI Grants-in-Aid for Scientific
-                                        Research (B)</a> has been accepted by JSPS.
-                                </p>
-                                <div class="flex justify-center w-full">
-                                    <img src="../img/Group2018.jpeg" alt="HolabImage" class="image-viewWidth image-border">
-                                </div>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2018/02/28</span>  Journal paper titled <a href= "https://www.tandfonline.com/doi/pdf/10.1080/01691864.2018.1447393?needAccess=true" class="paperlink"> Morphological Computation in Haptic Sensation and Interaction: From Nature to Robotics</a>
-                                has been accepted by Advanced Robotics.
-                                </p>
-                            </li>
-                            <li>
-                                <p class="description"><span class="font-bold"> 2018/02/01</span> Two papers have been accepted by the first IEEE/RAS conference on soft robotics <a
-                                        href="https://www.tandfonline.com/doi/pdf/10.1080/01691864.2018.1447393?needAccess=true" class="paperlink">RoboSoft 2018</a> , titled "Soft Grasping
-                                        with Wet Adhesion: Preliminary Evaluation" and "Tactile Sensing System with Wr'l Morphological Change: Modeling"
-                                    has been accepted by Advanced Robotics.
-                                </p>
-                            </li>
-
-                            <p class="description listproject -translate-x-10"> 2017</p>
-                            <li>
-                                <p class="description"><span class="font-bold"> 2017/12/01</span> Workshop titled <a href="https://www.jaist.ac.jp/ms/labs/vanho/RoboSoft_workshop_softhaptics.html" class="paperlink">Soft Haptics: what has been done and what to be done</a> has been accepted by <a href="https://robosoft2018.org/" class="paperlink">RoboSoft 2018</a>.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2017/12/01</span>  Workshop titled <a href="https://sites.google.com/view/icra18activetouch" class="paperlink">Active touch for perception and interaction: How nature inspires robotics</a> has been accepted
-                                by ICRA 2018.
-                                </p>
-                            </li>
-                            <li>
-                                <p class="description"><span class="font-bold"> 2017/07/01</span> Paper titled <a href="https://ieeexplore.ieee.org/document/7955043" class="paperlink">Wrin'Tac: Tactile Sensing System with Wrinkle's Morphological Change</a> has been published by IEEE
-                                Transactions on Industrial Informatics (now free for access).
-                                </p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2017/06/14</span> Paper titled Grasping by Wrapping: Mechanical Design and Evaluation has been accepted by 2017 IEEE International
-                                Conference on Intelligent Robots and Systems (IROS 2017), Vancouver, Canada, Sept., 2017.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2017/05/01</span> Workshop proposal on Morphological Design in Haptic Sensation, Interaction and Display has been accepted by 2017 IEEE
-                                International Conference on Intelligent Robots and Systems (IROS 2017), Vancouver, Canada, Sept., 2017.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2017/05/01</span> Proposal on soft sensor has been accepted by OMRON Tateishi Science and Technology Foundation.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2017/05/01</span> Proposal on soft sensor has been accepted by OMRON
-                                    Tateishi Science and Technology Foundation.
-                                </p>
-                            </li>
-
-                            <li>
-                                <p class="description"><span class="font-bold"> 2017/05/01</span> Paper titled: " Design and Analysis of a Soft-Fingered Hand with Contact Feedback " has been accepted for presentation
-                                at 2016 IEEE International Conference on Robotics and Automation (ICRA), Singapore, May 27 - June 2, 2017.
-                                </p>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-                
-            </div>
-        </div>
 
 
 
@@ -525,7 +281,7 @@
 
 
     </main>
-    <footer class="footercontainer">
+    <!-- <footer class="footercontainer">
         <div class="flex sm:flex-row overflow-hidden">
             <div class="flex flex-row-2 md:w-1/2 footerleft p-5">
                 <div class="  footerleft description">
@@ -621,7 +377,6 @@
                     <p> FAX: +81-761-51-1149</p>
                     <p class="mb-10"> E-mail: van-ho@jaist.ac.jp </p>
                 
-                    <!-- Hide this section on larger screens, show on small screens -->
                     <div class="jaistinfor description hidden sm:hidden block">
                         <h4 class="text-left description">Soft Haptics Lab.</h4>
                         <a href="./publications.html"
@@ -638,7 +393,74 @@
             </div>
         </div>
 
+    </footer> -->
+    <footer class="footer bg-gray-900 text-white py-8 mt-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-5">
+            <!-- About Section -->
+            <!-- <div>
+                <h4 class="text-xl font-bold mb-3">Soft Haptics Lab</h4>
+                <p class="opacity-75 text-sm text-center md:text-left">School of Materials Science</p>
+                <p class="opacity-75 text-sm text-center md:text-left">JAIST, Japan</p>
+                <img class="w-20 mt-3 mx-auto md:mx-0" src="../img/jaistlogo.jpg" alt="JAIST Logo">
+                <p class="text-xs opacity-50 mt-3">© Cis-trans, Inc. All rights reserved.</p>
+            </div> -->
+            <div>
+                <h4 class="text-xl font-bold mb-3">Soft Haptics Lab</h4>
+                <ul class="space-y-2 text-sm">
+                    <li class="opacity-75 text-center md:text-left">School of Materials Science</li>
+                    <li class="opacity-75 text-center md:text-left">JAIST, Japan</li>
+                    <img class="w-20 mt-3 mx-auto md:mx-0" src="../img/jaistlogo.jpg" alt="JAIST Logo">
+                    <p class="text-xs opacity-50 mt-3">© Cis-trans, Inc. All rights reserved.</p>
+                </ul>
+            </div>
+            
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-xl font-bold mb-3">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-center md:text-left">
+                    <li><a href="./index.html" class="hover:text-orange-500">Home</a></li>
+                    <li><a href="./research.html" class="hover:text-orange-500">Research</a></li>
+                    <li><a href="./publications.html" class="hover:text-orange-500">Publications</a></li>
+                    <li><a href="./member.html" class="hover:text-orange-500">Members</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Section -->
+            <div>
+                <h4 class="text-xl font-bold mb-3">Contact</h4>
+                <ul class="space-y-2 text-sm">
+                    <li class="opacity-75 text-center md:text-left">Address: 1-1 Asahi-dai, Nomi, Ishikawa, 923-1292 Japan</li>
+                    <li class="opacity-75 text-center md:text-left">TEL: +81-761-51-1584</li>
+                    <li class="opacity-75 text-center md:text-left">FAX: +81-761-51-1149</li>
+                    <li><a href="mailto:van-ho@jaist.ac.jp" class="hover:text-orange-500 opacity-75">Email: van-ho@jaist.ac.jp</a></li>
+                </ul>
+    
+                <!-- Social Media -->
+                <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                    <a href="#" class="social-icon hover:text-orange-500" aria-label="Facebook">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.689v-3.622h3.131V8.413c0-3.1 1.893-4.787 4.659-4.787 1.325 0 2.464.099 2.797.143v3.244l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon hover:text-orange-500" aria-label="Twitter">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.954 4.569c-.885.392-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.724-.949.564-2.005.974-3.127 1.195-.897-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124-4.09-.205-7.72-2.165-10.148-5.144-.423.724-.666 1.562-.666 2.457 0 1.697.87 3.194 2.188 4.074-.807-.026-1.566-.248-2.229-.616v.061c0 2.367 1.684 4.342 3.918 4.788-.41.111-.841.171-1.285.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.396 0-.786-.023-1.17-.067 2.179 1.396 4.768 2.209 7.557 2.209 9.054 0 14.001-7.496 14.001-13.986 0-.209 0-.42-.015-.63.962-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon hover:text-orange-500" aria-label="YouTube">
+                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.615 3.184A4.807 4.807 0 0 0 16.166 2H7.835a4.807 4.807 0 0 0-3.45 1.184C3.006 4.147 2 6.104 2 8.588v6.824c0 2.485 1.006 4.441 2.385 5.404A4.807 4.807 0 0 0 7.835 22h8.331a4.807 4.807 0 0 0 3.45-1.184C20.994 19.853 22 17.896 22 15.412V8.588c0-2.485-1.006-4.441-2.385-5.404zM10.542 15.7v-7.4L15.25 12l-4.708 3.7z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
+    
+    
+    
+    
     <script>
         // Mobile menu
         const hamburger = document.querySelector('#hamburger');

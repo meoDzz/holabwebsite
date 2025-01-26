@@ -29,7 +29,7 @@
 }
 
 .title2 {
-  @apply xl:text-[28px] lg:text-[25px] sm:text-[21px] md:text-[23px] font-bold uppercase text-blue-800;
+  @apply xl:text-[27px] lg:text-[24px] sm:text-[20px] md:text-[21px] font-bold uppercase text-blue-800;
 }
 .description {
   @apply xl:text-[20px] lg:text-[17px] sm:text-[16px]  md:text-[17px]  leading-snug; 
@@ -528,7 +528,7 @@
 /* lab director */
 /* Lab Director Section */
 .lab-director-section .container {
-  background: #FFF4E6;
+  /* background: #FFF4E6; */
   width: 100%;
   max-width: 1000px;
   /* background: white; */
@@ -555,7 +555,7 @@
 
 .director-photo {
   flex: 1;
-  max-width: 270px; /* Constrain width */
+  max-width: 200px; /* Constrain width */
   height: auto; /* Maintain the correct aspect ratio */
   border-radius: 10px; /* Rounded corners for elegance */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
@@ -647,5 +647,140 @@
 }
 
 
+/* General Styles */
+.features {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.feature-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  color: #333;
+  margin: 10px 0;
+}
+
+.feature:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+
+.feature p {
+  color: #666;
+  font-size: 0.9rem;
+}
 
 
+
+svg {
+  width: 50px;
+  height: 50px;
+  stroke: black; /* Icon color */
+  transition: transform 0.3s ease, stroke 0.3s ease;
+}
+
+svg:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+  stroke: #FF6F3C; /* Change color on hover */
+}
+
+
+/* Initial Hidden State for Animation */
+.fade-in {
+  opacity: 0; /* Completely transparent initially */
+  transform: translateY(50px); /* Shifted down */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
+}
+
+/* Active State */
+.fade-in.active {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset position */
+}
+
+
+
+
+
+/* Footer Styling */
+.footer {
+  background-color: #1e293b; /* Dark gray background */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.footer h4 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.footer p,
+.footer a {
+  font-size: 0.875rem;
+  color: #d1d5db; /* Light gray text */
+  text-decoration: none;
+  text-align: center; /* Align text for mobile */
+}
+
+.footer a:hover {
+  color: #FF6F3C; /* Burnt orange hover color */
+}
+
+.social-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Zoom on hover */
+  color: #FF6F3C; /* Orange on hover */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer h4 {
+      text-align: center;
+  }
+
+  .footer p,
+  .footer a {
+      text-align: center;
+  }
+
+  .footer img {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .flex {
+      justify-content: center;
+  }
+}
