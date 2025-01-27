@@ -51,8 +51,7 @@
 }
 
 .image-member {
-  width: 100%;
-
+  width: 80%;
   /* width: 20vw; */
   height: auto;
   display: flex;
@@ -724,10 +723,14 @@ svg:hover {
 
 
 
-
+.headerMenu {
+  background-color: #313a47; /* Dark gray background */
+  color: white;
+  font-family: Arial, sans-serif;
+}
 /* Footer Styling */
 .footer {
-  background-color: #1e293b; /* Dark gray background */
+  background-color: #313a47; /* Dark gray background */
   color: white;
   font-family: Arial, sans-serif;
 }
@@ -758,11 +761,11 @@ svg:hover {
   color: #FF6F3C; /* Orange on hover */
 }
 
-.container {
+/* .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-}
+} */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -781,6 +784,254 @@ svg:hover {
   }
 
   .flex {
-      justify-content: center;
+      justify-content: space-around;
+  }
+}
+
+
+/* General Styling */
+.social-media-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr; /* Default to 1 column for mobile screens */
+}
+
+.section-title {
+  font-size: 1.75rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Two-Column Layout for Larger Screens */
+@media (min-width: 768px) {
+  .social-media-section {
+      grid-template-columns: 1fr 1fr; /* Two columns: YouTube and Twitter */
+      align-items: start;
+  }
+}
+
+/* YouTube Section */
+.youtube-column .video-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive video grid */
+  justify-items: center;
+}
+
+.youtube-column iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.youtube-column {
+  text-align: center; /* Center-aligns all content, including the button */
+}
+
+.youtube-column .btn-view-more {
+  display: inline-block; /* Ensures the button respects text alignment */
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #FF6F3C, #FF944C);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.youtube-column .btn-view-more:hover {
+  background: linear-gradient(135deg, #FF944C, #FF6F3C);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.youtube-column .btn-view-more:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Twitter Section */
+.twitter-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.twitter-slider {
+  position: relative;
+  width: 100%;
+  max-height: 100vh; /* Limit slider height */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  scroll-behavior: smooth;
+  background-color: #f5f8fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tweet {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Button Styling */
+/* Modern Button Styling */
+.btn-view-more {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #FF6F3C, #FF944C); /* Gradient background */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px; /* Makes the button pill-shaped */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-view-more:hover {
+  background: linear-gradient(135deg, #FF944C, #FF6F3C); /* Reverse gradient on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on hover */
+  transform: translateY(-2px); /* Makes the button rise slightly */
+}
+
+.btn-view-more:active {
+  transform: translateY(0); /* Restores position when clicked */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduces shadow on click */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .btn-view-more {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+  }
+}
+
+
+
+
+
+
+.library-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.filter-container {
+  margin-top: 20px;
+}
+
+.filter-btn {
+  background-color: #6c757d; /* Neutral gray */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #495057; /* Darker gray */
+}
+
+.filter-btn.active {
+  background-color: #007bff; /* Vibrant blue */
+  color: white;
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-item {
+  display: block; /* All items are visible by default */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 10px 10px;
+}
+
+.text-container {
+  padding: 15px;
+  text-align: center;
+  background-color: #f1f1f1; /* Light background for text */
+  border-radius: 10px 10px 0 0;
+}
+
+.text-container h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.text-container p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Hover Effect */
+.image-item:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .filter-btn {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+  }
+
+  .text-container h3 {
+      font-size: 1rem;
+  }
+
+  .text-container p {
+      font-size: 0.8rem;
   }
 }

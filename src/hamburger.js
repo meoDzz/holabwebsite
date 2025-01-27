@@ -51,3 +51,54 @@ const observer = new IntersectionObserver(fadeInOnScroll, options);
 faders.forEach(fader => {
     observer.observe(fader);
 });
+
+
+// Highlight active tweet while scrolling
+const twitterSlider = document.querySelector('.twitter-slider');
+const tweets = document.querySelectorAll('.tweet');
+
+twitterSlider.addEventListener('scroll', () => {
+    tweets.forEach(tweet => {
+        const rect = tweet.getBoundingClientRect();
+        const sliderRect = twitterSlider.getBoundingClientRect();
+        if (rect.top >= sliderRect.top && rect.bottom <= sliderRect.bottom) {
+            tweet.style.backgroundColor = '#FFEEF0'; // Highlight visible tweet
+        } else {
+            tweet.style.backgroundColor = 'white'; // Reset others
+        }
+    });
+});
+
+
+// Wait until the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll(".filter-btn"); // Select all filter buttons
+    const imageItems = document.querySelectorAll(".image-item"); // Select all image items
+
+    // Loop through each filter button
+    filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            // Remove the 'active' class from all buttons
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            // Add the 'active' class to the clicked button
+            button.classList.add("active");
+
+            const selectedCategory = button.getAttribute("data-category"); // Get the selected category
+
+            // Filter image items
+            imageItems.forEach((item) => {
+                const itemCategory = item.getAttribute("data-category"); // Get the item's category
+
+                // Show the item if it matches the selected category or "all"
+                if (selectedCategory === "all" || selectedCategory === itemCategory) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    });
+});
+
+
+
