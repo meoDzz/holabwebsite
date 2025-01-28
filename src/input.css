@@ -556,12 +556,15 @@
 
 .director-photo {
   flex: 1;
-  max-width: 200px; /* Constrain width */
+  max-width: 220px; /* Constrain width */
+  width: 30vw;
   height: auto; /* Maintain the correct aspect ratio */
   border-radius: 10px; /* Rounded corners for elegance */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
   object-fit: cover; /* Ensures the image doesn't stretch */
 }
+
+
 .director-details {
   flex: 2;
   display: flex;
