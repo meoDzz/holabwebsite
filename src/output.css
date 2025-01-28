@@ -624,12 +624,12 @@ video {
   z-index: -30;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .-z-50 {
   z-index: -50;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mx-auto {
@@ -883,6 +883,21 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .pl-10 {
