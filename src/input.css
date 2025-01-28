@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .container {
   max-width: 1560px;
   font-family:  'sans-serif';
@@ -970,6 +972,8 @@ blockquote {
   color: white;
 }
 
+
+
 /* Image Grid */
 .image-grid {
   display: grid;
@@ -989,7 +993,7 @@ blockquote {
 
 .image-item img {
   width: 100%;
-  height: auto;
+  height: 200px;
   border-radius: 0 0 10px 10px;
 }
 
@@ -1033,5 +1037,53 @@ blockquote {
 
   .text-container p {
       font-size: 0.8rem;
+  }
+}
+
+
+
+
+.location-map {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.column {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.image-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Map Styling */
+.map-container iframe {
+  width: 100%;
+  height: 400px; /* Ensure map height matches the image */
+  border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .access-title {
+      font-size: 2rem;
+  }
+
+  .location-map {
+      grid-template-columns: 1fr; /* Stacks columns vertically on small screens */
+      gap: 15px;
+  }
+
+  .map-container iframe {
+      height: 300px; /* Adjust map height for smaller screens */
   }
 }
